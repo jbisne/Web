@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>05-04 : setInterval()로 텍스트 회전</title>
+</head>
+<body>
+	<h3> 텍스트가 자동 회전하며, 마우스로 클릭하면 중단합니다.</h3>
+	<hr>
+	<div>
+		<span id="div" style="background-color:yellow">
+		자동 회전하는 텍스트입니다.</span>
+	</div>
+</body>
+</html>
