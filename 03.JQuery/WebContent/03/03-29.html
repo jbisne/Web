@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- h1을 선택하고 복제한거를 div안에 넣어준것이다.
+'h1'이건 태그. $('h1') 이건 선택하고 객체가 된것. -->
+
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{
+			$('div').append($('h1').clone());
+		});
+	</script>
+</head>
+<body>
+	<h1>HEADER</h1>
+	<hr><div></div><hr/>
+</body>
+</html>

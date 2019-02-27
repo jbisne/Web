@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{
+			$('tr:eq(0)').css('background', '#000000').css('color', 'White');
+			$('td:nth-child(3n+1)').css('background','#565656');
+			$('td:nth-child(3n+2)').css('background', 'yellow');
+			$('td:nth-child(3n)').css('background', '#F9F9F9');
+		});		
+	</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<tr><th>이름</th><th>혈액형</th><th>지역</th></tr>
+		<tr><td>모모</td><td>A형</td><td>교토부 쿄타나베시</td></tr>
+		<tr><td>사나</td><td>B형</td><td>오사카시 텐노지구</td></tr>
+		<tr><td>미나</td><td>A형</td><td>효고현 니시노미야시</td></tr>
+		<tr><td>쯔위</td><td>A형</td><td>대만 타이난</td></tr>
+		<tr><td>나연</td><td>A형</td><td>서울 강동구</td></tr>
+		<tr><td>채영</td><td>B형</td><td>서울 강동구 둔촌동</td></tr>
+	</table>
+</body>
+</html>

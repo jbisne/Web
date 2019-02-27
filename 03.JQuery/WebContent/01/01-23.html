@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 아무것도 안나온다. -->
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{	
+			//변수를 선언합니다.
+			var object = { name : 'RintIanTta' };
+
+			// $.extend() 메서드를 사용합니다.
+			$.extend(object,
+			{
+				gender : 'Male',
+				part : 'Second Guitar'
+			});
+			
+			//출력합니다.
+			var output = ' ';
+			$.each(object, function (key, item)
+			{
+				//item = value 라고 생각.
+				output += key + ': ' + item + '\n';
+			});
+			
+			alert(output);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

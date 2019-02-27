@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--  앞은 0부터 시작, 뒤는 -1부터 시작
+즉, 맨앞칸(0번째칸) = 뒤에서 -3칸 -->
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{
+			$('h1').eq(0).css('background', 'Violet');
+			$('h1').eq(-1).css('background', 'Red');
+		});
+	</script>
+</head>
+<body>
+	<h1>TWICE</h1>
+	<h1>Red Velvet</h1>
+	<h1>GirlFriend</h1>	
+</body>
+</html>

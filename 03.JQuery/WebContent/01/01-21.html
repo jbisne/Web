@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 01-20과 같은 결과. 특수한 방법.-->
+	<style>
+		.high_light_0 { background : Yellow; }
+		.high_light_1 { background : Orange; }
+		.high_light_2 { background : Blue; }
+		.high_light_3 { background : Violet; }
+		.high_light_4 { background : Red; }
+	</style>	
+	
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{
+			$('h1').addClass(function (index)
+			{
+				return 'high_light_' + index;
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>MOMO - 0</h1>
+	<h1>SANA - 1</h1>
+	<h1>MINA - 2</h1>
+	<h1>TSUYU - 3</h1>
+	<h1>NAYEON - 4</h1>
+	
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{
+			$('h1').each(function ()
+			{
+				if ($(this).is('.select'))
+				{
+					$(this).css('background', 'Violet');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1 class = "select">TWICE</h1>
+	<h1>Red Velvet</h1>
+	<h1 class = "select">GirlFriend</h1>
+</body>
+</html>

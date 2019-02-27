@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{
+			//변수를 선언합니다.
+			var src = $('img').attr('src');
+			/*var src = $('img').eq(1).attr('src'); 하면 두번째꺼나옴.
+			eq를빼면 디폴트로 첫번째꺼나오는것.*/
+			
+			//출력합니다.
+			alert(src);
+		});
+	</script>
+</head>
+<body>
+	<img src = "모모.jpg"/>
+	<img src = "사나.jpg"/>
+	<img src = "나연.jpg"/>
+
+</body>
+</html>
