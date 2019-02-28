@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*   { margin:0px;	padding:0px;}
+		ul  { lis-style : none; }
+		img { width:400px;	height:500px; }
+	</style>
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script src = "jquery.innerfade.js"></script>
+	<script>
+		$(document).ready(function () 
+		{
+			//innerfade 플러그인을 적용합니다.
+			$('#inner_fade').innerfade
+			({
+				animationtype: 'fade',
+				speed: 750,
+				timeout: 2000,
+				type: 'random',
+				containerheight: '350px'
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul id = "inner_fade">
+		<li><img src = "모모.jpg"/></li>
+		<li><img src = "사나.jpg"/></li>
+		<li><img src = "나연.jpg"/></li>
+		<li><img src = "지효.jpg"/></li>
+		<li><img src = "다현.jpg"/></li>
+		<li><img src = "채영.jpg"/></li>
+		<li><img src = "쯔위.jpg"/></li>
+		<li><img src = "정연.jpg"/></li>
+		<li><img src = "미나.jpg"/></li>	
+	</ul>
+</body>
+</html>

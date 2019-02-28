@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">	
+</head>
+<body>
+	<script>
+		// XMLHttpRequest 객체를 생성합니다.
+		var request = new XMLHttpRequest();
+		request.open('GET', '/data.html', false);
+		
+		//Ajax를 수행합니다.
+		request.send();
+		
+		// 출력합니다.
+		alert(request.responseText);
+		document.body.innerHTML += request.responseText;
+	</script>
+	<!-- head에 스크립트를 쓰면안되는게, 바디에 내용이 있을지
+		몰라서 프로그램이 실행이 안된다. 바디에 써야함. -->
+</body>
+</html>
