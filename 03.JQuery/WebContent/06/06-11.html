@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">	
+	<title> XMLHttpRequest </title>
+	<script src = "xml2json.js"></script>
 </head>
 <body>
+<!-- 굳이 포멧변환을 할필욘없지만, 된다는걸 보여주는 예제. -->
 	<script>
 		// XMLHttpRequest 객체를 생성하는 함수
+		// /xml2json.js면 ROOT에 놔야하지만,
+		// 그냥 xml2json면 같은 폴더에 있어야함.
 		function createRequest()
 		{
 			try
@@ -42,12 +46,23 @@
 			{
 				if (request.status == 200)
 				{
-					document.body.innerHTML += request.responseText;
-				};
+					// 변수를 선언합니다.
+					var json = xml2json.parser(request.responseText);
+					console.log(json);
+					console.log(json.root.datas);
+					console.log(json.root.datas.data[0].name);
+					
+					// 이용합니다.
+					for (var i=0; i < json.root.datas.data.length; i++)
+					{
+						document.body.innerHTML += '<h1>' + json.root.datas.data[i].name + '</h1>';
+						document.body.innerHTML += '<h2>' + json.root.datas.data[i].price + '</h2>';
+					}
+				}
 			};
 		};
 		
-		request.open('GET', '/data.html', true);
+		request.open('GET', '/data.xml', true);
 		request.send();
 	</script>
 </body>

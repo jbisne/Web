@@ -42,12 +42,13 @@
 			{
 				if (request.status == 200)
 				{
-					document.body.innerHTML += request.responseText;
+					var json = eval('(' +request.responseText + ')');
+					console.log(json);
 				};
 			};
 		};
 		
-		request.open('GET', '/data.html', true);
+		request.open('GET', '/data.json', true);
 		request.send();
 	</script>
 </body>

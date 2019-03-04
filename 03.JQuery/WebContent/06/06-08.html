@@ -42,12 +42,25 @@
 			{
 				if (request.status == 200)
 				{
-					document.body.innerHTML += request.responseText;
+					// 데이터를 가공합니다.
+					var json = eval('(' +request.responseText + ')');
+					var output = '';
+					
+					for (var i=0; i< json.length; i++)
+					{
+						for (var key in json[i])
+						{
+							output += '<h1>' + i + ':' + json[i][key] + '</h1>';
+						}
+					}
+					
+					// 출력합니다.
+					document.body.innerHTML += output;
 				};
 			};
 		};
 		
-		request.open('GET', '/data.html', true);
+		request.open('GET', '/data.json', true);
 		request.send();
 	</script>
 </body>

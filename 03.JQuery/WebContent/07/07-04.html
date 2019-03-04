@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 03번은 그냥 넘어갔다. -->
+	<script src = "http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function ()
+		{
+			$.get('/data.html', function (data)
+			{
+				$('body').html(data);
+			});
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

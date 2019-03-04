@@ -42,12 +42,13 @@
 			{
 				if (request.status == 200)
 				{
-					document.body.innerHTML += request.responseText;
+					// 데이터를 가공합니다.
+					alert(request.responseXML);
 				};
 			};
 		};
 		
-		request.open('GET', '/data.html', true);
+		request.open('GET', '/data.xml', true);
 		request.send();
 	</script>
 </body>
