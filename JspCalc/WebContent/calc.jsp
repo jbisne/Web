@@ -22,6 +22,9 @@
 		int num1= Integer.parseInt(sNum1);
 		int num2= Integer.parseInt(sNum2);
 		
+		//int로 바꿔준 이유는 String 형태로 더해주면 값 계산이 안되고,
+		// 5 + 5 는 55 이렇게 되기때문에 String 형태를 int형태로 바꿔준것!
+		
 		if (operator.equals("add"))
 		{
 			result = num1 + num2;
@@ -34,7 +37,7 @@
 			out.println("두 수의 빼기는" + result);
 		}
 		
-		else if(operator.equals("multifly"))
+		else if(operator.equals("multiply"))
 		{
 			result = num1 * num2;
 			out.println("두 수의 곱하기는" + result);
