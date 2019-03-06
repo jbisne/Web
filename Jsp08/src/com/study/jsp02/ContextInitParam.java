@@ -10,8 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/ContextInitParam")
-public class ContextInitParam extends HttpServlet 
-{
+public class ContextInitParam extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	//공유할수있는 데이터를 넣어준다.
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException 
@@ -33,4 +34,6 @@ public class ContextInitParam extends HttpServlet
 		
 		writer.close();
 	}
+
+
 }

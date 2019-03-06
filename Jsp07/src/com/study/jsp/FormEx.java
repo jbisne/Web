@@ -25,7 +25,9 @@ public class FormEx extends HttpServlet {
 		System.out.println("doPost");
 		
 		request.setCharacterEncoding("UTF-8");
+		//이걸 넣어줘야 한글이 안깨진다.
 		
+		String name = request.getParameter("name");
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		

@@ -3,19 +3,12 @@ package com.study.jsp03;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
-import javax.servlet.annotation.WebServlet;
 
 //굳이 이거말고 2번 쓰는게좋다.
 //@WebListener
 public class ContextListenerEx implements ServletContextListener 
 {
 
-    public ContextListenerEx() 
-    {
-       
-    }
-    
     @Override
     public void contextDestroyed(ServletContextEvent event)
     {

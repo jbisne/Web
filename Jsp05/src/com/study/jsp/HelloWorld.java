@@ -12,11 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/HelloWorld")
 public class HelloWorld extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public HelloWorld() 
-    {
-        super();
-    }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException 
@@ -35,12 +30,7 @@ public class HelloWorld extends HttpServlet {
 		writer.println("<body>");
 		writer.println("<h1>HelloWorld~~~</h1>");
 		writer.println("</body>");
-		writer.println("</html>");		
-	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException 
-	{
+		writer.println("</html>");	
 	}
 
 }

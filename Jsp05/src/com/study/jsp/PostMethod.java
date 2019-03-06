@@ -9,11 +9,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 @WebServlet("/PostMethod")
-public class PostMethod extends HttpServlet 
-{
+public class PostMethod extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	//주소를 그냥 치면 Get 방식으로 출력됨.
+	
 
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException 
 	{
@@ -33,7 +35,7 @@ public class PostMethod extends HttpServlet
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException 
-	{		
+	{
 		System.out.println("doPost");
 		
 		response.setContentType("text/html; charset=UTF-8");

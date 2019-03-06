@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns={"/ServletInitParam2"},
-			initParams={@WebInitParam(name="id", value="abcdef"),
-						@WebInitParam(name="pw", value="1234"),
-						@WebInitParam(name="path", value="C:\\javalec\\workspace")})
-public class ServletInitParam2 extends HttpServlet 
-{
+initParams={@WebInitParam(name="id", value="abcdef"),
+			@WebInitParam(name="pw", value="1234"),
+			@WebInitParam(name="path", value="C:\\javalec\\workspace")})
+public class ServletInitParam2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException 
@@ -40,6 +40,7 @@ public class ServletInitParam2 extends HttpServlet
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException 
 	{
+
 		doGet(request, response);
 	}
 
