@@ -2,7 +2,7 @@
     <wb-module deploy-name="Jsp20_1-DAO">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Jsp20"/>
         <property name="java-output-path" value="/Jsp20_1-DAO/build/classes"/>
+        <property name="context-root" value="Jsp201"/>
     </wb-module>
 </project-modules>
