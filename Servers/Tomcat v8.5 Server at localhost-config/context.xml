@@ -26,17 +26,18 @@
     <Manager pathname="" />
     -->
     
-     <Resource
-    	name="jdbc/Oracle11g"
-    	auth="Container"
-    	type="javax.sql.DataSource"
-    	driverClassName="oracle.jdbc.driver.OracleDriver"
-    	url="jdbc:oracle:thin:@localhost:1521:xe" 
-    	username="scott"
-    	password="tiger"
-    	maxActive="5"
-    	maxWait="5000"
-    />
+	<Resource 
+	    auth="Container" 
+	    driverClassName="oracle.jdbc.driver.OracleDriver" 
+	    maxActive="5" 
+	    maxWait="5000" 
+	    name="jdbc/Oracle11g" 
+	    password="tiger" 
+	    type="javax.sql.DataSource" 
+	    url="jdbc:oracle:thin:@localhost:1521:xe" 
+	    username="scott"
+	/>
+
 
     <!-- web.xml하면 같은 컨텍스트 (같은 프로젝트) 안에서만
     사용가능하지만 서버에 이렇게해놓으면 전부 사용가능. -->
