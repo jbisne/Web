@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.study.jsp.command.BCommand;
 import com.study.jsp.command.BContentCommand;
@@ -52,6 +53,14 @@ public class BFrontController extends HttpServlet {
 		String conPath = request.getContextPath();
 		String com = uri.substring(conPath.length());
 		
+		HttpSession session = null;
+		session = request.getSession();
+		int curPage = 1;
+		if (session.getAttribute("cpage") != null)
+		{
+			curPage = (int)session.getAttribute("cpage");
+		}
+		
 		if (com.equals("/write_view.do")) 
 		{
 			viewPage = "write_view.jsp";
@@ -93,7 +102,7 @@ public class BFrontController extends HttpServlet {
 		{
 			command = new BDeleteCommand();
 			command.execute(request,  response);
-			viewPage = "list.do";
+			viewPage = "list.do?page="+curPage;
 		}
 		else if (com.equals("/reply_view.do"))
 		{
@@ -105,7 +114,7 @@ public class BFrontController extends HttpServlet {
 		{
 			command = new BReplyCommand();
 			command.execute(request, response);
-			viewPage = "list.do";
+			viewPage = "list.do?page="+curPage;
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
