@@ -5,11 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+	<script type="text/javascript" src="./naver-editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+	<script>
+		function form_check()
+		{
+			oEditors.getById["ir1"].exec("UPDATE_CONTENTS_FIELD", []);
+			
+			document.modify_form.submit();
+		}
+	</script>
 </head>
 <body>
 	
 	<table width= "500" cellpadding= "0" cellspacing="0" border= "1">
-		<form action= "modify.do" method= "post">
+		<form action= "modify.do"  name="modify_form" method= "post">
 			<input type="hidden" name= "bId" value= "${content_view.bId}">
 			<input type="hidden" name= "kind" value= "modify">
 		
@@ -32,12 +41,23 @@
 			<tr>
 				<td> 내용 </td>
 				<td>
-					 <textarea rows="10" name="bContent" >${content_view.bContent} </textarea>
+					 <textarea rows="10" name="bContent" id="ir1" cols="100" >${content_view.bContent} </textarea>
+					 <script type="text/javascript">
+						var oEditors = [];
+						nhn.husky.EZCreator.createInIFrame
+						({
+						    oAppRef: oEditors,
+						    elPlaceHolder: "ir1",
+						    sSkinURI: "naver-editor/SmartEditor2Skin.html",
+						    fCreator: "createSEditor2"
+						});
+					</script>
 				</td>
 			</tr>
 			<tr>
-				<td colspan= "2"> <input type= "submit" value= "수정"> &nbsp;&nbsp;					
-					<a href= "content_view.do?bId=${content_view.bId}">취소</a> &nbsp;&nbsp;
+				<td colspan= "2"> 
+					<a href= "JavaScript:form_check();">수정완료</a> &nbsp;&nbsp;					
+					<a href= "content_view.do?bId=${content_view.bId}&kind=modify">취소</a>&nbsp;&nbsp;
 					<a href= "list.do?page=<%= session.getAttribute("cpage")%>"> 목록보기</a> &nbsp;&nbsp;
 				</td>
 			</tr>

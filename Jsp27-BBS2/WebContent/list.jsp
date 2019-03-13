@@ -55,7 +55,7 @@
 			<!-- 개별 페이지 -->
 			<c:forEach var= "fEach" begin= "${page.startPage}" end= "${page.endPage}" step= "1">
 				<c:choose>
-				<c:when test= "${(page.curPage = fEach}">
+				<c:when test= "${page.curPage == fEach}">
 					[${fEach} }] &nbsp;
 				</c:when>
 				
