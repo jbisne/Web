@@ -1,5 +1,11 @@
 package com.study.jsp;
 
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 
 public class JoinProcess extends HttpServlet
@@ -7,9 +13,9 @@ public class JoinProcess extends HttpServlet
 	private static final long serialVersionUID = 1L;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletExcetpion, IOException
+			throws ServletException, IOException
 	{
-		request.setCharacerEncoding("UTF-8");
+		request.setCharacterEncoding("UTF-8");
 		
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
