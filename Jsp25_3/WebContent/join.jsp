@@ -15,9 +15,10 @@
 			
 			메일 : <input type="text" name="eMail" size="20"><br>
 			주소 : <input type="text" name="address" size="50"><br>
-			<input type="submit" value="회원가입"><input type="reset" value="취소">
+			<input type="submit" value="회원가입"> <input type="reset" value="취소">
 			<input type="reset" value="로그인" onclick="javascript:window.location='login.jsp'">
 		</form>
 	
 </body>
+
 </html>

@@ -1,5 +1,5 @@
-<%@page import= "java.sql.Timestamp" %>
-<%@page import = "com.study.jsp.*" %>
+<%@page import="java.sql.Timestamp"%>
+<%@page import ="com.study.jsp.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <% request.setCharacterEncoding("UTF-8"); %>
@@ -9,6 +9,7 @@
 	dto.setrDate(new Timestamp(System.currentTimeMillis()));
 	MemberDao dao = MemberDao.getInstance();
 	String json_data = "";
+	
 	if (dao.confirmId(dto.getId()) == MemberDao.MEMBER_EXISTENT)
 	{
 		json_data = "{\"code\":\"fail\", \"desc\":\"아이디가 이미 존재 합니다.\"}";				

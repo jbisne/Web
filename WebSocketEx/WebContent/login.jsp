@@ -7,7 +7,7 @@
 <title>login</title>
 </head>
 	<script>
-		function form_check()
+		function form_check() 
 		{
 			submit();
 		}

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>회원가입</title>
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script>
@@ -63,7 +63,7 @@
 				url: '/Jsp212/JoinProcess',
 				//url : '/Jsp212/check/joinOk.jsp',
 				//Ok만 모아놓은 check폴더 만들었을때 주석창의 주소.
-				type: 'POST',
+				type: 'post',
 				data: queryString,
 				dataType: 'text',
 				success: function(json)
@@ -90,10 +90,10 @@
 		비밀번호 : <input type="password" id="pw" name="pw"	size="20"><br>
 		비밀번호 확인 : <input type="password" id="pw_check" name="pw_check" size="20"><br>
 		이름 : <input type="text" id="name" name="name"	size="20"><br>
-		메일 : <input type="text" id="eMail" name="eMail"	size="20"><br>
-		주소 : <input type="text" id="address" name="address"	size="50"><br><p>
+		메일 : <input type="text" id="eMail" name="eMail" size="20"><br>
+		주소 : <input type="text" id="address" name="address" size="50"><br><p>
 		<input type="button" value="회원가입" onclick="form_check()"> &nbsp;&nbsp;&nbsp;
-		<input type="button" value="로그인" onclick="javascript:window.location= 'login.jsp'">
+		<input type="button" value="로그인" onclick="javascript:window.location='login.jsp'">
 	</form>
 </body>
 </html>
