@@ -11,7 +11,7 @@
 	<meta name="google-signin-client_id" content="196552721056-dubj28468hv8e4g978v9l0590bkh3j6l.apps.googleusercontent.com">
 
 	<script>
-	function onSignIn(googleUser) {
+		function onSignIn(googleUser) {
 		var profile = googleUser.getBasicProfile();
 		console.log('ID: ' + profile.getId());
 		console.log('Name: ' + profile.getName());
