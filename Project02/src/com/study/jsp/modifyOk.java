@@ -8,9 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class modifyOk implements Service {
-	
-	public modifyOk() {
+public class modifyOk implements Service
+{
+	public modifyOk() 
+	{
 		
 	}
 	
@@ -35,7 +36,8 @@ public class modifyOk implements Service {
 		PrintWriter writer = response.getWriter();
 		
 		int ri = dao.updateMember(dto);
-		if(ri == 1)	{
+		if(ri == 1)	
+		{
 			System.out.println("변경 성공");
 
 			//html 출력
@@ -47,7 +49,9 @@ public class modifyOk implements Service {
 			writer.println("</body></html>");
 			writer.close();
 
-		}else {
+		}
+		else 
+		{
 			//html 출력
 			writer.println("<html><head></head><body>");
 			writer.println("<script language=\"javascript\">");

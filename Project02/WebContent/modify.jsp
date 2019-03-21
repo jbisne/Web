@@ -1,4 +1,3 @@
-
 <%@page import="java.sql.Connection" %>
 <%@page import="com.study.jsp.MemberDto" %>
 <%@page import="com.study.jsp.MemberDao" %>
@@ -15,10 +14,9 @@
 <meta charset="UTF-8">
 <title>수정</title>
 </head>
+
 <body>
 
-	
-	
 	<form action="modifyOk.do" method="post">
 		아이디 : <%= id %><br>
 		비밀번호 : <input type="text" name="pw" size="10"><br>

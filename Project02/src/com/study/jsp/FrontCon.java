@@ -54,9 +54,12 @@ public class FrontCon extends HttpServlet {
 		}else if(command.equals("/joinOk.do")) {
 			Service service = new joinOk();
 			service.execute(request, response);
+		}else if(command.equals("/deleteOk.do")) {
+			Service service = new deleteOk();
+			service.execute(request, response);
 		}else if(command.equals("/logoutOk.do")) {
 			logoutOk(request, response);
-		}
+		}		
 	}
 	
 	public void logoutOk(HttpServletRequest request, HttpServletResponse response)

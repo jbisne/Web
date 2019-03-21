@@ -1,11 +1,8 @@
 package com.study.jsp;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
-
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -208,25 +205,70 @@ public class MemberDao {//데이터베이스 연결하는 코드는 전부 DAO�
 		return ri;
 	}
 	
-	
-	private Connection getConnection() {
+	public int deleteMember(MemberDto dto)
+	{
+		int ri = 0;
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String query = "delete from members where id = ?";
 		
+		try
+		{
+			con = getConnection();
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1, dto.getId());
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) 
+			{
+				ri = MemberDao.MEMBER_EXISTENT;
+			}
+			else 
+			{
+				ri = MemberDao.MEMBER_NONEXISTENT;
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			try	
+			{
+				rs.close();
+				pstmt.close();
+				con.close();
+			}
+			catch(Exception e2) 
+			{
+				e2.printStackTrace();
+			}
+		}
+		return ri;
+	}
+		
+	private Connection getConnection() {
+			
 		Context context = null;
 		DataSource dataSource = null;
 		Connection con = null;
 
-		try {
+		try 
+		{
 			//lookup 함수의 파라메터는 context.xml에 설정된 name과 동일해야한다.
 			//name(jdbc/Oracle11g)
 			context = new InitialContext();
 			dataSource = (DataSource)context.lookup("java:comp/env/jdbc/Oracle11g");
 			con = dataSource.getConnection();
-		}catch(Exception e) {
+		}
+		catch(Exception e) 
+		{
 			System.out.println("================ \n");
 			e.printStackTrace();
 		}
 		
 		return con;
 	}
-	
 }
