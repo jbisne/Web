@@ -1,3 +1,4 @@
+//로그인이랑 게시판 통합 frontcontroller
 package com.study.jsp.frontcontroller;
 
 import java.io.IOException;
@@ -8,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.study.jsp.command.BCommand;
 import com.study.jsp.command.BContentCommand;
@@ -17,6 +19,11 @@ import com.study.jsp.command.BModifyCommand;
 import com.study.jsp.command.BReplyCommand;
 import com.study.jsp.command.BReplyViewCommand;
 import com.study.jsp.command.BWriteCommand;
+import com.study.jsp.login.Service;
+import com.study.jsp.login.deleteOk;
+import com.study.jsp.login.joinOk;
+import com.study.jsp.login.loginOk;
+import com.study.jsp.login.modifyOk;
 
 @WebServlet("*.do")
 public class BFrontController extends HttpServlet {
@@ -44,13 +51,30 @@ public class BFrontController extends HttpServlet {
 			throws ServletException, IOException
 	{
 		request.setCharacterEncoding("UTF-8");
+		System.out.println("actionDo");
 		
 		String viewPage = null;
 		BCommand command = null;
 		
 		String uri = request.getRequestURI();		
 		String conPath = request.getContextPath();
-		String com = uri.substring(conPath.length());
+		String com = uri.substring(conPath.length());		
+		
+		if(com.equals("/loginOk.do")) {
+			Service service = new loginOk();
+			service.execute(request, response);
+		}else if(com.equals("/modifyOk.do")) {
+			Service service = new modifyOk();
+			service.execute(request, response);
+		}else if(com.equals("/joinOk.do")) {
+			Service service = new joinOk();
+			service.execute(request, response);
+		}else if(com.equals("/deleteOk.do")) {
+			Service service = new deleteOk();
+			service.execute(request, response);
+		}else if(com.equals("/logoutOk.do")) {
+			logoutOk(request, response);
+		}
 		
 		if (com.equals("/write_view.do")) 
 		{
@@ -111,6 +135,16 @@ public class BFrontController extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 		dispatcher.forward(request, response);
 		
+	}
+	
+	public void logoutOk(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException
+	{
+		System.out.println("logout");
+		
+		HttpSession session = request.getSession();
+		session.invalidate();
+		response.sendRedirect("login.jsp");
 	}
 	
 }

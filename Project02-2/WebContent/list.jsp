@@ -29,7 +29,10 @@
 		</tr>
 		</c:forEach>
 		<tr>
-			<td colspan= "5"> <a href= "write_view.do">글작성</a></td>
+			<td colspan= "5"> 
+			<a href= "write_view.do">글작성</a> &nbsp;
+			<a href= "list.do">목록보기</a>
+			</td>		
 		</tr>		
 	</table>
 	

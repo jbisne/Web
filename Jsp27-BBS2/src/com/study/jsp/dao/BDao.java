@@ -13,7 +13,6 @@ import javax.sql.DataSource;
 import com.study.jsp.command.BPageInfo;
 import com.study.jsp.dto.BDto;
 
-
 public class BDao 
 {
 	//private static BDao instance = new BDao();
@@ -41,6 +40,7 @@ public class BDao
 	public static BDao getInstance()
 	{
 		return instance;
+		//프라이빗을 퍼블릭스태틱 으로 : 싱글턴 패턴
 	}
 	
 	public void write(String bName, String bTitle, String bContent)

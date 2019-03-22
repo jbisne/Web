@@ -16,6 +16,12 @@ public class BDao
 {
 	DataSource dataSource;
 	
+	int listCount = 10;		//한 페이지당 보여줄 게시물의 갯수
+	int pageCount = 10;		// 하단에 보여줄 페이지 리스트의 갯수
+	
+	private static BDao instance = new BDao();
+	//이거 무슨뜻?
+	
 	public BDao()
 	{
 		try
@@ -29,13 +35,12 @@ public class BDao
 		}				
 	}
 	
-	public static BDao instance = new BDao();
 	public static BDao getInstance()
 	{
 		return instance;
 	}
 	
-	public void write(String bName, String bTitle, String bContent)
+	public void write(String bCategory, String bName, String bTitle, String bContent)
 	{
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -44,14 +49,15 @@ public class BDao
 		{
 			con = dataSource.getConnection();
 			String query = "insert into mvc_board" +
-						   "(bId, bName, bTitle, bContent, bHit, bGroup, bStep, bIndent)" +
+						   "(bCategory, bId, bName, bTitle, bContent, bHit, bGroup, bStep, bIndent)" +
 						   "values " +
-						   "(mvc_board_seq.nextval, ?, ?, ?, 0, mvc_board_seq.currval, 0, 0)";
+						   "(?,mvc_board_seq.nextval, ?, ?, ?, 0, mvc_board_seq.currval, 0, 0)";
 			pstmt = con.prepareStatement(query);
-			pstmt.setString(1, bName);
-			pstmt.setString(2, bTitle);
-			pstmt.setString(3, bContent);
-			int rn = pstmt.executeUpdate();
+			pstmt.setString(1, bCategory);
+			pstmt.setString(2, bName);
+			pstmt.setString(3, bTitle);
+			pstmt.setString(4, bContent);
+			int rn = pstmt.executeUpdate();			
 		}
 		catch (Exception e)
 		{

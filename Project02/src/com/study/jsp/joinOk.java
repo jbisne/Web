@@ -70,7 +70,7 @@ public class joinOk implements Service {
 				writer.println("</script>");
 				writer.println("</body></html>");
 				writer.close();
-				System.out.println("에러 발생 가입 실패");;
+				System.out.println("에러 발생 가입 실패");
 			}
 		}
 	}
