@@ -11,6 +11,7 @@
 	
 	<table width="500" cellpadding="0" cellspacing="0" border="1">
 		<tr>
+			<td>카테고리</td>
 			<td>번호</td>
 			<td>이름</td>
 			<td>제목</td>
@@ -19,11 +20,13 @@
 		</tr>
 		<c:forEach items="${list}" var ="dto">
 		<tr>
+			<td>${dto.bCategory}</td>
 			<td>${dto.bId}</td>
-			<td>${dto.bName }</td>
+			<td>${dto.bName}</td>
 			<td>
 				<c:forEach begin="1" end="${dto.bIndent}">-</c:forEach>
-				<a href= "content_view.do?bId=${dto.bId}&kind=view">${dto.bTitle}</a></td>
+				<a href= "content_view.do?bId=${dto.bId}&bCategory=<%=session.getAttribute("bCategory")%>&kind=view">${dto.bTitle}</a></td>
+				<!-- 이부분 잘 모르겠다. 왜 써야하는지. -->
 			<td>${dto.bDate}</td>
 			<td>${dto.bHit}</td>
 		</tr>
