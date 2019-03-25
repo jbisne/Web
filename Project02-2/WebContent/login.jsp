@@ -48,7 +48,7 @@
 		아이디 : <input type="text" name="id"><br>
 		비밀번호 : <input type="text" name="pw"><br>
 		<input type="submit" value="로그인">
-	</form><br>
+	
 	<!-- =============로그인 창=============== -->
 		
 	<div id="login" class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -60,7 +60,7 @@
     <span id="uname"></span>
 	</div>
 	<!-- =============구글 로그인 창(login1사용)=============== -->
-
+	</form><br>
 </body>
 </html>
 

@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 
 public class BDto 
 {
+	int bCategory;
 	int bId;
 	String bName;
 	String bTitle;
@@ -20,8 +21,9 @@ public class BDto
 	
 	}
 
-	public BDto(int bId, String bName, String bTitle, String bContent, Timestamp bdate, int bHit, int bGroup, int bStep,
+	public BDto(int bCategory, int bId, String bName, String bTitle, String bContent, Timestamp bdate, int bHit, int bGroup, int bStep,
 			int bIndent) {
+		this.bCategory = bCategory;
 		this.bId = bId;
 		this.bName = bName;
 		this.bTitle = bTitle;
@@ -31,6 +33,16 @@ public class BDto
 		this.bGroup = bGroup;
 		this.bStep = bStep;
 		this.bIndent = bIndent;
+	}
+	
+	public int getbCategory()
+	{
+		return bCategory;
+	}
+	
+	public void setbCategory(int bCategory)
+	{
+		this.bCategory = bCategory;
 	}
 
 	public int getbId() {

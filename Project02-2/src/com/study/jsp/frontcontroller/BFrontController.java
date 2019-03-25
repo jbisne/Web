@@ -1,4 +1,3 @@
-//로그인이랑 게시판 통합 frontcontroller
 package com.study.jsp.frontcontroller;
 
 import java.io.IOException;

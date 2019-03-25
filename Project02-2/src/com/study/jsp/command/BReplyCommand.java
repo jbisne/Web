@@ -10,6 +10,7 @@ public class BReplyCommand implements BCommand
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response)
 	{
+		String bCategory = request.getParameter("bCategory");
 		String bId = request.getParameter("bId");
 		String bName = request.getParameter("bName");
 		String bTitle = request.getParameter("bTitle");
@@ -19,6 +20,6 @@ public class BReplyCommand implements BCommand
 		String bIndent = request.getParameter("bIndent");
 		
 		BDao dao = BDao.getInstance();
-		dao.reply(bId, bName, bTitle, bContent, bGroup, bStep, bIndent);
+		dao.reply(bCategory, bId, bName, bTitle, bContent, bGroup, bStep, bIndent);
 	}
 }

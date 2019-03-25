@@ -5,11 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+	<script type="text/javascript" src="./naver-editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+	<script>
+		function form_check()
+		{
+			oEditors.getById["ir1"].exec("UPDATE_CONTENTS_FIELD", []);
+			
+			document.reply_form.submit();
+		}
+	</script>
 </head>
 <body>
 	
 	<table width= "500" cellpadding= "0" cellspacing="0" border= "1">
-		<form action= "reply.do" method= "post">
+		<form action= "reply.do" name= "reply_form" method= "post">
 			<input type="hidden" name= "bId" value= "${reply_view.bId}">
 			<input type="hidden" name= "bGroup" value= "${reply_view.bGroup}">
 			<input type="hidden" name= "bStep" value= "${reply_view.bStep}">
@@ -34,11 +43,24 @@
 			<tr>
 				<td> 내용 </td>
 				<td>
-					 <textarea rows="10" name="bContent" >${reply_view.bContent} </textarea>
+					 <textarea rows="10" name="bContent" id="ir1" cols="100" >${reply_view.bContent} </textarea>
+					 <script type="text/javascript">
+						var oEditors = [];
+						nhn.husky.EZCreator.createInIFrame
+						({
+					    oAppRef: oEditors,
+					    elPlaceHolder: "ir1",
+					    sSkinURI: "naver-editor/SmartEditor2Skin.html",
+					    fCreator: "createSEditor2"
+						});
+					</script>
 				</td>
 			</tr>
 			<tr>
-				<td colspan= "2"> <input type= "submit" value= "답변"> <a href= "list.do"> 목록</a></td>
+				<td colspan= "2"> 
+				<a href= "JavaScript:form_check();">답변완료</a> &nbsp;&nbsp;
+				<a href= "content_view.do?bId=${reply_view.bId}&kind=modify">취소</a>&nbsp;&nbsp;
+				<a href= "list.do?page=<%= session.getAttribute("cpage")%>" >목록</a></td>
 			</tr>
 		</form>
 	</table>

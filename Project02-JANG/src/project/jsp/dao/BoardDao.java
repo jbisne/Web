@@ -31,12 +31,16 @@ public class BoardDao {
 		}
 	}
 	
-	public static BoardDao getInstance() {
+	public static BoardDao getInstance() 
+	{
 		return instance;
-	} // 프라이빗 을 퍼블릭스태틱 으로 : 싱글턴패턴
+		// 프라이빗 을 퍼블릭스태틱 으로 : 싱글턴패턴
+	} 
 	
-	public BPageInfo articlePage(int curPage, int boardCategory){
-		
+// ==================================================================	
+
+	public BPageInfo articlePage(int curPage, int boardCategory)
+	{	
 		System.out.println("아티클");
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -137,6 +141,7 @@ public class BoardDao {
 //						   "      where rownum <= ?) B " + 
 //						   " where b.num >= ?";
 			System.out.println("here");
+			
 			pstmt = con.prepareStatement(query);
 			pstmt.setInt(1, boardCategory);
 			pstmt.setInt(2, nEnd);
@@ -144,8 +149,11 @@ public class BoardDao {
 			resultSet = pstmt.executeQuery();
 //			System.out.println( resultSet.getInt("bCategory") + " listDao");
 			System.out.println("here2");
-			while(resultSet.next()) {
+			
+			while(resultSet.next()) 
+			{
 				System.out.println("here3");
+				
 				int bCategory = resultSet.getInt("bCategory");
 				int bId = resultSet.getInt("bId");
 				String bName = resultSet.getString("bName");
@@ -157,10 +165,12 @@ public class BoardDao {
 				int bStep = resultSet.getInt("bStep");
 				int bIndent = resultSet.getInt("bIndent");
 				System.out.println("here4");
+				
 				BoardDto dto = new BoardDto(bCategory, bId, bName, bTitle, bContent, bDate,
 									bHit, bGroup, bStep, bIndent);
 				dtos.add(dto);
 			}
+	
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {

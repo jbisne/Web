@@ -40,7 +40,7 @@
 			<td colspan="3"><a href="write_view.do?bCategory=<%=session.getAttribute("bCategory")%>">글작성</a></td>
 			<td colspan="3"><a href="main.jsp">메인</a></td>
 		</tr>
-		
+<!-- ======================================================================== -->		
 		<tr>
 			<td colspan="6">
 			<!-- 처음 -->
