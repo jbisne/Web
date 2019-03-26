@@ -31,18 +31,21 @@ public class BListCommand implements BCommand
 		
 		BDao dao = BDao.getInstance();
 		BPageInfo pinfo = dao.articlePage(nPage, boardCategory);
-		//여기 왜?
 		request.setAttribute("page", pinfo);
+		//이  세줄 해석이?
+		System.out.println("article 완");
 		
 		nPage = pinfo.getCurPage();
 		
 		HttpSession session = null;
 		session = request.getSession();
 		session.setAttribute("cpage", nPage);
+		System.out.println("카테고리:"+pinfo.getBoardCategory());
 		
 		ArrayList<BDto> dtos = dao.list(nPage, boardCategory);
 		request.setAttribute("list", dtos);
 		session.setAttribute("bCategory", bCategory);
 		//이 3줄 잘모르겠다.
+		System.out.println("list 완");
 	}
 }

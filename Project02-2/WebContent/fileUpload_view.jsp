@@ -4,21 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>JSP/Servlet 22-2</title>
 </head>
-<body>
+<body>	
+<!-- 텍스트가 올라가는부분,파일이 올라가는부분이 있어서 파트가
+두개로 나눠졋다고해서 멀티파트 enctype. -->
+<!-- 스트림으로 올라가기떄문에 타입 post사용 -->	
 	
-	<table width= "500" cellpadding="0" cellspacing= "0" border= "1">	
-		<form action="write.do" method= "post">
-			<td> 카테고리 </td>
-			<td>
-			<select name="bCategory">
-			    <option value="">게시판 선택</option>
-			    <option value="0">공지 게시판</option>
-			    <option value="1">자유 게시판</option>		
-			</select>
-			</td>
-			
+	<table width= "700px" cellpadding="5" cellspacing= "5" border= "5">
+		<form action="fileUpload.jsp" method= "post" enctype= "multipart/form-data">
 			<tr>
 				<td> 회원 아이디 </td>
 				<td><input type= "text" name= "bName" size= "20">&nbsp;( <%if(session.getAttribute("id") != null)
@@ -33,14 +27,15 @@
 				<td> 내용 </td>
 				<td> <textarea name= "bContent" rows= "10"></textarea></td>
 			</tr>
-			
 			<tr>
-				<td colspan= "2">
-					<input type="submit" value="입력"> &nbsp;&nbsp;				
-					<a href="list.do?bCategory=<%=session.getAttribute("bCategory")%>">목록보기</a>
-				</td>
+				<td> 파일 </td>
+				<td><input type= "file" name= "filename"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="업로드" ></td>
 			</tr>
 		</form>
 	</table>
+	
 </body>
 </html>

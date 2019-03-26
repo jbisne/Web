@@ -97,7 +97,7 @@ public class BDao
 			con = dataSource.getConnection();
 			
 			String query = "select * from( " +
-						   "select rewnum num, A.* from( " +
+						   "select rownum num, A.* from( " +
 						   "select * from( " +
 						   "select * from mvc_board where bcategory=?) " +
 						   "order by bgroup desc, bstep asc) A " +
@@ -112,15 +112,19 @@ public class BDao
 //			   "      order by bgroup desc, bstep asc) A " +
 //			   "      where rownum <= ?) B " + 
 //			   " where b.num >= ?";
+			System.out.println("here");
 			
 			pstmt = con.prepareStatement(query);
 			pstmt.setInt(1, boardCategory);
 			pstmt.setInt(2, nEnd);
 			pstmt.setInt(3, nStart);
 			resultSet = pstmt.executeQuery();
+			System.out.println("here2");
+			
 			
 			while (resultSet.next())
 			{
+				System.out.println("here3");
 				int bCategory = resultSet.getInt("bCategory");
 				int bId = resultSet.getInt("bId");
 				String bName = resultSet.getString("bName");
@@ -131,6 +135,7 @@ public class BDao
 				int bGroup = resultSet.getInt("bGroup");
 				int bStep = resultSet.getInt("bStep");
 				int bIndent = resultSet.getInt("bIndent");
+				System.out.println("here4");
 				
 				BDto dto = new BDto(bCategory, bId, bName, bTitle, bContent, bDate,
 									bHit, bGroup, bStep, bIndent);
