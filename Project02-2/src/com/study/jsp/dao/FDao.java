@@ -142,14 +142,14 @@ public class FDao
 			con = dataSource.getConnection();
 
 			String query = "select * " +
-			   " from(" +
-			   "  select rownum num, A.* " +
-			   "    from(" + 
-			   "     select * " +
-			   "      from file_board " +
-			   "      order by fId desc) A " +
-			   "      where rownum <= ?) B " + 
-			   " where b.num >= ?";
+						   " from(" +
+						   "  select rownum num, A.* " +
+						   "    from(" + 
+						   "     select * " +
+						   "      from file_board " +
+						   "      order by fId desc) A " +
+						   "      where rownum <= ?) B " + 
+						   " where b.num >= ?";
 			
 			pstmt = con.prepareStatement(query);
 			pstmt.setInt(1, nEnd);
@@ -200,7 +200,7 @@ public class FDao
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		String query = "insert into file_board " +
-					   " (fid, fName, ftitle, fContent, fileName, orgfileName, fDate, fHit) " +
+					   " (fId, fName, fTitle, fContent, fileName, orgfileName, fDate, fHit) " +
 					   " values " +
 					   " (file_board_seq.nextval, ?, ?, ?, ?, ?, ?, ?)";
 		
@@ -253,7 +253,7 @@ public class FDao
 			
 			String query = "select * from file_board where fId = ?";
 			pstmt = con.prepareStatement(query);
-			pstmt.setInt(1,  Integer.parseInt(fileID));
+			pstmt.setInt(1, Integer.parseInt(fileID));
 			resultSet = pstmt.executeQuery();
 			
 			if (resultSet.next())
@@ -333,7 +333,7 @@ public class FDao
 			con = dataSource.getConnection();
 			String query = "delete from file_board where fId = ?";
 			pstmt = con.prepareStatement(query);
-			pstmt.setInt(1, Integer.parseInt(fId));
+			pstmt.setString(1, fId);
 			int rn = pstmt.executeUpdate();
 		}
 		catch (Exception e)

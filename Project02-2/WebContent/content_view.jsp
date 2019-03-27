@@ -35,6 +35,8 @@
 				<a href= "list.do?page=<%= session.getAttribute("cpage") %>"> 목록보기</a> &nbsp;&nbsp;
 				<a href= "delete.do?bId=${content_view.bId}">삭제</a> &nbsp;&nbsp;
 				<a href= "reply_view.do?bId=${content_view.bId}">답변</a>
+			</td>
+		</tr>
 	</table>
 </body>
 </html>

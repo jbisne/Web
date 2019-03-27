@@ -7,7 +7,7 @@
     pageEncoding="UTF-8"%>
 
  <% 	
- 	String fName = (String)session.getAttribute("mId");
+ 	String fName = "";
  	String fTitle = "";
  	String fContent = "";
  	String fileName = "";
@@ -17,7 +17,7 @@
  	// String uploadPath = request.getSession().getServletContext().getRealPath("/");
  	// String uploadPath = request.getRealPath("fileUpload"); 
  	// upload는 폴더명 / 폴더의 경로를 구해옴
- 	String uploadPath = "D:/web/fileFolder";
+ 	String uploadPath = "D:/web/Project02-2/WebContent/fileFolder";
  	System.out.println(uploadPath);
  	
 	 // String path = request.getRealPath("fileFolder");
@@ -36,8 +36,9 @@
  		Enumeration files = multi.getFileNames();
  		String str = (String)files.nextElement();
  		
- 		fTitle = multi.getParameter(fTitle);
- 		fContent = multi.getParameter(fContent);
+ 		fName = multi.getParameter("fName");
+ 		fTitle = multi.getParameter("fTitle");
+ 		fContent = multi.getParameter("fContent");
 
  		/* form의 <input type="file"> name값을 모를 경우 name을 구할때 사용
 		Enumeration files=multi.getFileNames(); // form의 type="file" name을 구함
@@ -53,6 +54,7 @@
  	catch(Exception e)
  	{
  		e.printStackTrace();
+ 		// 업로드 종료
  	}
 	 
  	FDao dao = FDao.getInstance(); 

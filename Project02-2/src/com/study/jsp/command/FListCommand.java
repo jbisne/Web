@@ -28,19 +28,19 @@ public class FListCommand implements BCommand
 		
 		FDao dao = FDao.getInstance();
 		FPageInfo finfo = dao.articlePage(nPage);
-		request.setAttribute("fInfo", finfo);
-		System.out.println("진행O");
+		request.setAttribute("fpage", finfo);
+		System.out.println("진행 완료");
 		
 		nPage = finfo.getCurPage(); 
 		
 		HttpSession session = null;
 		session = request.getSession();
-		session.setAttribute("cPage", nPage);
+		session.setAttribute("cpage", nPage);
 		
 		ArrayList<FDto> dtos = dao.list(nPage);
 		request.setAttribute("list", dtos);
 		
-		System.out.println("list O");
+		System.out.println("list 완료");
 		
 	}
 }

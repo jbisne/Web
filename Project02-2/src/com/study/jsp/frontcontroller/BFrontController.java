@@ -18,6 +18,8 @@ import com.study.jsp.command.BModifyCommand;
 import com.study.jsp.command.BReplyCommand;
 import com.study.jsp.command.BReplyViewCommand;
 import com.study.jsp.command.BWriteCommand;
+import com.study.jsp.command.FContentCommand;
+import com.study.jsp.command.FDeleteCommand;
 import com.study.jsp.command.FListCommand;
 import com.study.jsp.login.Service;
 import com.study.jsp.login.deleteOk;
@@ -148,6 +150,7 @@ public class BFrontController extends HttpServlet {
 			command.execute(request, response);
 			viewPage = "list.do";
 		}
+/////////////////////////////////////////////////////
 		else if(com.contentEquals("/filelist.do"))
 		{
 			command = new FListCommand();

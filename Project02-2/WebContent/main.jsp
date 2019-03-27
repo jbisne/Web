@@ -28,7 +28,7 @@
 		"javascript:window.location='list.do?bCategory=0'">
 		<input type="button" value="자유게시판" onclick=<%session.setAttribute("bCategory", 1);%>
 		"javascript:window.location='list.do?bCategory=1'">
-		<input type="button" value="자료실"	onclick="javascript:window.location='filelist.jsp'">
+		<input type="button" value="자료실"	onclick="javascript:window.location='filelist.do'">
 		<input type="button" value="채팅"
 				onclick="javascript:window.location='Chatlogin.jsp'">&nbsp;&nbsp;&nbsp;
 	</form>

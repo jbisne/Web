@@ -179,7 +179,7 @@ public class BFrontController extends HttpServlet {
 			String boardCategory = (String)session.getAttribute("bCategory");
 			viewPage = "list.do?page="+curPage+"&bCategory="+boardCategory;
 //		}else if(com.contentEquals("/search.do")) {
-//			
+/////////////////////////////////////////////////////////		
 		}else if(com.contentEquals("/filelist.do")) {
 			bcommand = new FListCommand();
 			bcommand.execute(request, response);
@@ -195,7 +195,7 @@ public class BFrontController extends HttpServlet {
 			bcommand.execute(request, response);
 			viewPage = "filelist.do?page="+curPage;
 		}
-		
+////////////////////////////////////////////////////////		
 		else if (com.contentEquals("/search.do")) {
 			String column = request.getParameter("column");
 			String word = request.getParameter("word");
