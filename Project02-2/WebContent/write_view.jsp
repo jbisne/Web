@@ -13,7 +13,9 @@
 			<td> 카테고리 </td>
 			<td>
 			<select name="bCategory">
-			    <option value="">게시판 선택</option>
+				<!-- <option value="">게시판 선택</option> 
+				여유되면 이거선택하고 (입력)하면 alert창 뜨면서
+				"게시판을 선택해주세요" 뜨면서 페이지 안넘어가게-->
 			    <option value="0">공지 게시판</option>
 			    <option value="1">자유 게시판</option>		
 			</select>
@@ -37,7 +39,7 @@
 			<tr>
 				<td colspan= "2">
 					<input type="submit" value="입력"> &nbsp;&nbsp;				
-					<a href="list.do?bCategory=<%=session.getAttribute("bCategory")%>">목록보기</a>
+					<a href="list.do?bCategory=<%=session.getAttribute("bCategory")%>">목록으로</a>
 				</td>
 			</tr>
 		</form>

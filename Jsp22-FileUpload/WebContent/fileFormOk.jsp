@@ -8,8 +8,8 @@
 	 검색해서 쓰는게아니라 미리 만들어놔야함.-->
  <% 	
  	String path = request.getRealPath("fileFolder");
- 
  	int size = 1024 * 1024 * 10;	//10M
+ 	
  	String file = "";
  	String oriFile = "";
  	

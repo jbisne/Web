@@ -46,6 +46,6 @@ public class BListCommand implements BCommand
 		request.setAttribute("list", dtos);
 		session.setAttribute("bCategory", bCategory);
 		//이 3줄 잘모르겠다.
-		System.out.println("list 완");
+		System.out.println("list O");
 	}
 }

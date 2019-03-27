@@ -18,11 +18,13 @@ import com.study.jsp.command.BModifyCommand;
 import com.study.jsp.command.BReplyCommand;
 import com.study.jsp.command.BReplyViewCommand;
 import com.study.jsp.command.BWriteCommand;
+import com.study.jsp.command.FListCommand;
 import com.study.jsp.login.Service;
 import com.study.jsp.login.deleteOk;
 import com.study.jsp.login.joinOk;
 import com.study.jsp.login.loginOk;
 import com.study.jsp.login.modifyOk;
+
 
 @WebServlet("*.do")
 public class BFrontController extends HttpServlet {
@@ -59,6 +61,20 @@ public class BFrontController extends HttpServlet {
 		String conPath = request.getContextPath();
 		String com = uri.substring(conPath.length());		
 		
+		HttpSession session = null;
+		session = request.getSession();
+		int curPage = 1;
+		if(session.getAttribute("cpage") != null)
+		{
+			curPage = (int)session.getAttribute("cpage");
+		}
+		if(session.getAttribute("fpage") != null)
+		{
+			curPage = (int)session.getAttribute("fpage");
+		}
+
+//////////////////////////////////////////////////////////
+		
 		if(com.equals("/loginOk.do")) {
 			Service service = new loginOk();
 			service.execute(request, response);
@@ -74,6 +90,8 @@ public class BFrontController extends HttpServlet {
 		}else if(com.equals("/logoutOk.do")) {
 			logoutOk(request, response);
 		}
+
+
 		
 		if (com.equals("/write_view.do")) 
 		{
@@ -129,6 +147,28 @@ public class BFrontController extends HttpServlet {
 			command = new BReplyCommand();
 			command.execute(request, response);
 			viewPage = "list.do";
+		}
+		else if(com.contentEquals("/filelist.do"))
+		{
+			command = new FListCommand();
+			command.execute(request, response);
+			viewPage = "filelist.jsp";
+		}
+		else if(com.contentEquals("/fileUpload_view.do"))
+		{
+			viewPage = "fileUpload_view.jsp";
+		}
+		else if(com.contentEquals("/filecontent_view.do"))
+		{
+			command = new FContentCommand();
+			command.execute(request, response);
+			viewPage = "filecontent_view.jsp";
+		}
+		else if(com.contentEquals("/filedelete.do"))
+		{
+			command = new FDeleteCommand();
+			command.execute(request, response);
+			viewPage = "filelist.do?page="+curPage;
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);

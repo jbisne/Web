@@ -32,7 +32,10 @@
 				<td><input type= "file" name= "filename"></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="업로드" ></td>
+				<td><input type="submit" value="업로드" ></td><br>
+				<td><input type="button" value="목록으로"
+					onclick="javascript:window.location='filelist.jsp'">
+				</td>
 			</tr>
 		</form>
 	</table>
