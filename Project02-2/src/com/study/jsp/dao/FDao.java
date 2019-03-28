@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
+import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 
 import com.study.jsp.command.BPageInfo;
@@ -324,18 +325,23 @@ public class FDao
 		}
 	}
 	
-	public void filedelete(String fId)
+	public void filedelete(String fName)
 	{
 		Connection con = null;
 		PreparedStatement pstmt = null;
+		
+		String query = "delete from file_board " +
+					   " where fName = ?";
+		
 		try
-		{
+		{	
 			con = dataSource.getConnection();
-			String query = "delete from file_board where fId = ?";
 			pstmt = con.prepareStatement(query);
-			pstmt.setString(1, fId);
+			pstmt.setString(1, fName);
+			System.out.println(fName +" delete fileDao진행");
 			int rn = pstmt.executeUpdate();
 		}
+
 		catch (Exception e)
 		{
 			e.printStackTrace();

@@ -40,7 +40,7 @@
 			<td colspan= "2">
 				<a href= "filelist.do?page=<%=session.getAttribute("cpage")%>">목록보기</a>&nbsp;&nbsp;
 				<!-- 여기가 조금 헷갈림. 아직 get하고 set을 어떨떄 써야하는지 긴가민가 -->
-				<a href= "filedelete.do?fId=${filecontent_view.fId}">삭제</a>&nbsp;&nbsp;				
+				<a href= "filedelete.do?fName=${filecontent_view.fName}">삭제</a>&nbsp;&nbsp;				
 			</td>
 		</tr>
 	</table>

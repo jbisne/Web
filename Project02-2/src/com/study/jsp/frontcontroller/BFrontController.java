@@ -203,9 +203,26 @@ public class BFrontController extends HttpServlet {
 		}
 		else if(com.contentEquals("/filedelete.do"))
 		{
-			command = new FDeleteCommand();
-			command.execute(request, response);
+			String id = (String)session.getAttribute("id");
+			String name = request.getParameter("fName");
+			System.out.println(id + name);
+
 			viewPage = "filelist.do?page="+curPage;
+			
+			if(id.equals(name)) 
+			{
+				command = new FDeleteCommand();
+				command.execute(request, response);
+				viewPage = "filelist.do?page="+curPage;
+			}
+			else 
+			{
+				response.setContentType("text/html; charset=UTF-8");
+				PrintWriter out = response.getWriter();
+				out.println("<script>alert('권한없음');history.go(-1);</script>");		
+				out.flush();
+				return;
+			}
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
