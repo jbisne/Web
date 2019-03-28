@@ -23,8 +23,8 @@
 			
 			<tr>
 				<td> 회원 아이디 </td>
-				<td><input type= "text" name= "bName" size= "20">&nbsp;( <%if(session.getAttribute("id") != null)
-                         out.println(session.getAttribute("id"));%>)</td>			               
+				<td><%if(session.getAttribute("id") != null)
+                         out.println(session.getAttribute("id"));%></td>			               
 			</tr>
 			
 			<tr>

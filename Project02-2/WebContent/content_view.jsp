@@ -10,6 +10,10 @@
 	
 	<table width="500" cellpadding="0" cellspacing="0" border= "1">
 		<tr>
+			<td>카테고리</td>
+			<td>${content_view.bCategory }</td>
+		</tr>
+		<tr>
 			<td> 번호 </td>
 			<td> ${content_view.bId} </td>
 		</tr>
@@ -31,10 +35,10 @@
 		</tr>
 		<tr>
 			<td colspan= "2">
-				<a href= "modify_view.do?bId=${content_view.bId}&kind=modify">수정</a> &nbsp;&nbsp;
-				<a href= "list.do?page=<%= session.getAttribute("cpage") %>"> 목록보기</a> &nbsp;&nbsp;
-				<a href= "delete.do?bId=${content_view.bId}">삭제</a> &nbsp;&nbsp;
-				<a href= "reply_view.do?bId=${content_view.bId}">답변</a>
+				<a href="modify_view.do?bId=${content_view.bId }&bName=${content_view.bName}&kind=modify">수정</a>&nbsp;&nbsp;
+				<a href="list.do?page=<%=session.getAttribute("cpage")%>&bCategory=<%=session.getAttribute("bCategory")%>">목록보기</a>&nbsp;&nbsp;
+				<a href="delete.do?bId=${content_view.bId}&bName=${content_view.bName}">삭제</a>&nbsp;&nbsp;
+				<a href="reply_view.do?bId=${content_view.bId }">답변</a>
 			</td>
 		</tr>
 	</table>

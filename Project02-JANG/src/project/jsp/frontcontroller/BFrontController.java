@@ -134,6 +134,7 @@ public class BFrontController extends HttpServlet {
 			bcommand = new BContentCommand();
 			bcommand.execute(request, response);
 			viewPage = "content_view.jsp";
+///////////////////////////////////
 		}else if(com.contentEquals("/modify_view.do")) {
 			String id = (String)session.getAttribute("mId");
 			String name = request.getParameter("bName");
@@ -152,7 +153,9 @@ public class BFrontController extends HttpServlet {
 		}else if(com.contentEquals("/modify.do")) {
 			bcommand = new BModifyCommand();
 			bcommand.execute(request, response);
-			viewPage = "list.do?page="+curPage;				
+			viewPage = "list.do?page="+curPage;	
+///////////////////////////modify 권한설정
+			
 		}else if(com.contentEquals("/delete.do")) {
 			String id = (String)session.getAttribute("mId");
 			String name = request.getParameter("bName");
@@ -169,6 +172,7 @@ public class BFrontController extends HttpServlet {
 				out.flush();
 				return;
 			}
+////////////////////////////delete 권한설정
 		}else if(com.contentEquals("/reply_view.do")) {
 			bcommand = new BReplyViewCommand();
 			bcommand.execute(request, response);

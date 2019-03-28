@@ -1,6 +1,7 @@
 package com.study.jsp.frontcontroller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -103,7 +104,12 @@ public class BFrontController extends HttpServlet {
 		{
 			command = new BWriteCommand();
 			command.execute(request, response);
-			viewPage = "list.do";
+
+			//request.setAttribute("bCategory", session.getAttribute("bCategory"));
+			command = new BListCommand();
+			command.execute(request, response);
+			viewPage = "list.jsp";
+			// 여기 밑에 세줄맞나?
 		}
 		else if (com.equals("/list.do"))
 		{
@@ -116,27 +122,50 @@ public class BFrontController extends HttpServlet {
 			command = new BContentCommand();
 			command.execute(request,  response);
 			viewPage = "content_view.jsp";
-		}
-		else if  (com.equals("/modify_view.do"))
-		{
-			command = new BContentCommand();
-			command.execute(request,  response);
-			viewPage = "modify_view.jsp";
-		}
-		else if (com.equals("/modify.do"))
-		{
+/////////////////////////////////////////////////////////			
+		}else if(com.contentEquals("/modify_view.do")) {
+			String id = (String)session.getAttribute("id");
+			String name = request.getParameter("bName");
+			System.out.println(id + name);
+			if(id.equals(name)) {
+				command = new BContentCommand();
+				command.execute(request, response);
+				viewPage = "modify_view.jsp";
+			}else {
+				response.setContentType("text/html; charset=UTF-8");
+				PrintWriter out = response.getWriter();
+				out.println("<script>alert('권한없음');history.go(-1);</script>");		
+				out.flush();
+				return;
+			}		
+		}else if(com.contentEquals("/modify.do")) {
 			command = new BModifyCommand();
 			command.execute(request, response);
-			
-			command = new BContentCommand();
-			command.execute(request, response);
-			viewPage = "content_view.jsp";
+			viewPage = "list.do?page="+curPage;
 		}
-		else if (com.equals("/delete.do"))
+
+//////////////////////////////////////////////////////		
+		else if(com.contentEquals("/delete.do")) 
 		{
-			command = new BDeleteCommand();
-			command.execute(request,  response);
-			viewPage = "list.do";
+			String id = (String)session.getAttribute("id");
+			String name = request.getParameter("bName");
+			System.out.println(id + name);
+	
+			if(id.equals(name)) 
+			{
+				command = new BDeleteCommand();
+				command.execute(request, response);
+				String boardCategory = (String)session.getAttribute("bCategory");
+				viewPage = "list.do?page="+curPage+"&bCategory="+boardCategory;
+			}
+			else 
+			{
+				response.setContentType("text/html; charset=UTF-8");
+				PrintWriter out = response.getWriter();
+				out.println("<script>alert('권한없음');history.go(-1);</script>");		
+				out.flush();
+				return;
+			}
 		}
 		else if (com.equals("/reply_view.do"))
 		{

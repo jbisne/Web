@@ -29,6 +29,7 @@
 				<td>${content_view.bCategory }</td>
 			</tr>
 			<tr>
+			
 				<td>번호</td>
 				<td>${content_view.bId }</td>
 			</tr>

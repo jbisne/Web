@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.study.jsp.dao.BDao;
 import com.study.jsp.dto.BDto;
 
+
 public class BContentCommand implements BCommand
 {
 	@Override
@@ -13,9 +14,10 @@ public class BContentCommand implements BCommand
 	{
 		String bId = request.getParameter("bId");
 		String bKind = request.getParameter("kind");
-		BDao dao = new BDao();
+		BDao dao = BDao.getInstance();
 		BDto dto = dao.contentView(bId, bKind);
 		
+		System.out.println("content커맨드 진행");
 		request.setAttribute("content_view", dto);
 	}
     

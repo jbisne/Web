@@ -222,25 +222,23 @@ public class BDao
 		return dto;
 	}
 	
-	public void modify (String bId, String bName, String bTitle, String bContent)
+	public void modify (String bId, String bTitle, String bContent)
 	{
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		
-		String query = "upeate mvc_board" +
-					   "   set bName = ?, " +
-					   "	   bTitle = ?, " +
-					   "	   bContent = ? " +
-					   "where bId = ?";
+		String query = "update mvc_board " +
+						" set bTitle = ?, " +
+						"	 bContent = ? " +
+						" where bId = ?";
 		//여기랑 밑에 트라이문에서 왜 bName을 지운거???
 		try
 		{
 			con = dataSource.getConnection();
 			pstmt = con.prepareStatement(query);
-			pstmt.setString(1,  bName);
-			pstmt.setString(2,  bTitle);
-			pstmt.setString(3,  bContent);
-			pstmt.setString(4,  bId);
+			pstmt.setString(1, bTitle);
+			pstmt.setString(2, bContent);
+			pstmt.setString(3, bId);
 			int rn = pstmt.executeUpdate();			
 		}
 		catch (Exception e)

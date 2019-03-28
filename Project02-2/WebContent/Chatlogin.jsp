@@ -25,8 +25,12 @@
 								%>"> <br>
 		비밀번호 : <input type="password" name="pw"><br><p>
 		<input type="button" value="로그인" onclick="form_check();"> &nbsp;&nbsp;
-		<input type="button" value="회원가입">							
+		<input type="button" value="회원가입"
+				onclick="javascript:window.location='join.jsp'"></p>
+		<input type="button" value="메인"
+				onclick="javascript:window.location='main.jsp'">			
 	</form>
+	
 	
 </body>
 </html>

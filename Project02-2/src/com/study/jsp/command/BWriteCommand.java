@@ -15,7 +15,7 @@ public class BWriteCommand implements BCommand
 		HttpSession session = request.getSession();
 		// ★위에 두줄이 BWriteCommand에서 session사용의 핵심이다!★
 		
-		String bName = request.getParameter("bName");
+		String bName = (String)session.getAttribute("id");
 		String bTitle = request.getParameter("bTitle");
 		String bContent = request.getParameter("bContent");
 		
