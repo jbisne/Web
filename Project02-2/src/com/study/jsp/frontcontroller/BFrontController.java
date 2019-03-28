@@ -59,6 +59,8 @@ public class BFrontController extends HttpServlet {
 		
 		String viewPage = null;
 		BCommand command = null;
+		/* 나중에 다시 공부할 때, [멤버변수값 mId] [파일변수갑서 fId] 이렇게 알아보기 
+		  쉽게 만들기 [게시판커맨드 bcommand] [멤버(로그인)커맨스 mcommand] 이렇게 */
 		
 		String uri = request.getRequestURI();		
 		String conPath = request.getContextPath();
@@ -93,14 +95,14 @@ public class BFrontController extends HttpServlet {
 		}else if(com.equals("/logoutOk.do")) {
 			logoutOk(request, response);
 		}
-
+////////////////////////////////////////////////////////////
 
 		
-		if (com.equals("/write_view.do")) 
+		if (com.contentEquals("/write_view.do")) 
 		{
 			viewPage = "write_view.jsp";
 		}
-		else if (com.equals("/write.do"))
+		else if (com.contentEquals("/write.do"))
 		{
 			command = new BWriteCommand();
 			command.execute(request, response);
@@ -117,7 +119,7 @@ public class BFrontController extends HttpServlet {
 			command.execute(request,response);
 			viewPage = "list.jsp";
 		}
-		else if (com.equals("/content_view.do"))
+		else if (com.contentEquals("/content_view.do"))
 		{
 			command = new BContentCommand();
 			command.execute(request,  response);
@@ -167,17 +169,20 @@ public class BFrontController extends HttpServlet {
 				return;
 			}
 		}
-		else if (com.equals("/reply_view.do"))
+		else if (com.contentEquals("/reply_view.do"))
 		{
 			command = new BReplyViewCommand();
 			command.execute(request, response);
 			viewPage = "reply_view.jsp";
 		}
-		else if (com.equals("/reply.do"))
+		else if (com.contentEquals("/reply.do"))
 		{
 			command = new BReplyCommand();
 			command.execute(request, response);
-			viewPage = "list.do";
+			String boardCategory = (String)session.getAttribute("bCategory");
+			viewPage = "list.do?page="+curPage+"&bCategory="+boardCategory;
+			//reply할때 이렇게 페이지 설정해주는게 핵심.
+			//reply 뿐만아니라 모든 곳에 bCategory로 페이지 설정해줘야함
 		}
 /////////////////////////////////////////////////////
 		else if(com.contentEquals("/filelist.do"))

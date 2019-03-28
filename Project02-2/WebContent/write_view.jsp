@@ -13,9 +13,6 @@
 			<td> 카테고리 </td>
 			<td>
 			<select name="bCategory">
-				<!-- <option value="">게시판 선택</option> 
-				여유되면 이거선택하고 (입력)하면 alert창 뜨면서
-				"게시판을 선택해주세요" 뜨면서 페이지 안넘어가게-->
 			    <option value="0">공지 게시판</option>
 			    <option value="1">자유 게시판</option>		
 			</select>
@@ -26,6 +23,9 @@
 				<td><%if(session.getAttribute("id") != null)
                          out.println(session.getAttribute("id"));%></td>			               
 			</tr>
+			<!-- 내가 하려던 [글적을때마다 아이디](로그인ID) 하려면, 오라클 테이블에
+				새로적는 아이디값이 들어갈 칼럼이 한칸 더 있어야한다. 왜냐하면 
+				나중에 로그인or수정할 때 뭘 보고 비교해서 글 수정하게 해줄지말지 정하지. -->
 			
 			<tr>
 				<td> 제목 </td>

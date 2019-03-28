@@ -12,6 +12,7 @@ public class BReplyViewCommand implements BCommand
 	public void execute(HttpServletRequest request, HttpServletResponse response)
 	{
 		String bId = request.getParameter("bId");
+		
 		BDao dao = BDao.getInstance();
 		BDto dto = dao.reply_view(bId);
 		

@@ -119,6 +119,7 @@ public class BFrontController extends HttpServlet {
 			viewPage = "list.jsp";
 		}
 
+///////////////////로그인 설정
 		
 		else if(com.contentEquals("/write_view.do")) {
 			viewPage = "write_view.jsp";
@@ -173,7 +174,8 @@ public class BFrontController extends HttpServlet {
 				return;
 			}
 ////////////////////////////delete 권한설정
-		}else if(com.contentEquals("/reply_view.do")) {
+		}else if(com.contentEquals("/reply_view.do"))
+		{
 			bcommand = new BReplyViewCommand();
 			bcommand.execute(request, response);
 			viewPage = "reply_view.jsp";

@@ -5,8 +5,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import project.jsp.dao.BoardDao;
 
-
-
 public class BReplyCommand implements BCommand{
 
 	@Override

@@ -13,10 +13,11 @@
 	
 	<table width= "700px" cellpadding="5" cellspacing= "5" border= "5">
 		<form action="fileUpload.jsp" method= "post" enctype= "multipart/form-data">
+		
 			<tr>
 				<td> 회원 아이디 </td>
-				<td><input type= "text" name= "fName" size= "20">&nbsp;(<%if(session.getAttribute("id") != null)
-                         out.println(session.getAttribute("id"));%>)</td>			               
+				<td><%if(session.getAttribute("id") != null)
+                         out.println(session.getAttribute("id"));%></td>			               
 			</tr>
 			
 			<tr>

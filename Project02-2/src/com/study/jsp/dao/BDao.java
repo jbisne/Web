@@ -371,8 +371,9 @@ public class BDao
 		}
 		return dto;
 	}
-	public void reply (String bCategory, String bId, String bName, String bTitle, String bContent,
-					   String bGroup, String bStep, String bIndent)
+	
+	public void reply (String bCategory, String bId, String bName, String bTitle, 
+						String bContent, String bGroup, String bStep, String bIndent)
 	{
 		replyShape(bGroup, bStep);
 		

@@ -361,7 +361,8 @@ public class BoardDao {
 			pstmt.setInt(1, Integer.parseInt(str));
 			resultSet = pstmt.executeQuery();
 			
-			if(resultSet.next()) {
+			if(resultSet.next()) 
+			{
 				int bCategory = resultSet.getInt("bCategory");
 				int bId = resultSet.getInt("bId");
 				String bName = resultSet.getString("bName");
@@ -893,8 +894,5 @@ public class BoardDao {
 		
 		return dtos;
 	}
-	
-	
-	
-	
+
 }

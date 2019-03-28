@@ -7,7 +7,9 @@
     pageEncoding="UTF-8"%>
 
  <% 	
- 	String fName = "";
+ 	String fName = (String)session.getAttribute("id");
+ 	// 이게 [게시판이름 fName]과 [로그인이름 id(나중에 혼자공부할때 mId로 만들기.)]이
+ 	// 같게 만들어주는 코드.
  	String fTitle = "";
  	String fContent = "";
  	String fileName = "";
@@ -36,7 +38,6 @@
  		Enumeration files = multi.getFileNames();
  		String str = (String)files.nextElement();
  		
- 		fName = multi.getParameter("fName");
  		fTitle = multi.getParameter("fTitle");
  		fContent = multi.getParameter("fContent");
 

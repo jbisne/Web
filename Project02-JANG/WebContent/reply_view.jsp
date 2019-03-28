@@ -1,20 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>     
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<script type="text/javascript" src="./naver-editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
-	<script>
-		function form_check(){
-			oEditors.getById["ir1"].exec("UPDATE_CONTENTS_FIELD", []);
-			
-			document.reply_form.submit();
-		}
-	</script>
+	
 </head>
 <body>
 

@@ -21,5 +21,6 @@ public class BReplyCommand implements BCommand
 		
 		BDao dao = BDao.getInstance();
 		dao.reply(bCategory, bId, bName, bTitle, bContent, bGroup, bStep, bIndent);
+		System.out.println("reply command");
 	}
 }
