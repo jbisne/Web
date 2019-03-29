@@ -9,8 +9,22 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%String a = (String)session.getAttribute("bCategory");
+	String b = "";
+	if (Integer.parseInt(a) == 0)
+	{
+		b = "공지사항";
+	}
+	else if (Integer.parseInt(a) == 1)
+	{
+		b = "자유게시판";
+	}
 	
+	%>
 	<table width="500" cellpadding="0" cellspacing="0" border="1">
+		<tr>
+		<td colspan="6"><%=b %></td>
+		</tr>
 		<tr>
 			<td>카테고리</td>
 			<td>번호</td>

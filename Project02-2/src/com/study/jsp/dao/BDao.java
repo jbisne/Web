@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import javax.naming.Context;
@@ -78,7 +79,7 @@ public class BDao
 				e2.printStackTrace();
 			}
 		}
-	}
+	}		
 	
 	public ArrayList<BDto> list(int curPage, int boardCategory)
 	{

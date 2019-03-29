@@ -95,9 +95,15 @@ public class BFrontController extends HttpServlet {
 		}else if(com.equals("/logoutOk.do")) {
 			logoutOk(request, response);
 		}
-////////////////////////////////////////////////////////////
+////////////////
+		else if(com.equals("/search.do")) 
+		{
+			command = new BListCommand();
+			command.execute(request, response);
+			viewPage = "list.do?page="+curPage;
+	    }
+///////////////검색 기능 추가
 
-		
 		if (com.contentEquals("/write_view.do")) 
 		{
 			viewPage = "write_view.jsp";
@@ -111,7 +117,6 @@ public class BFrontController extends HttpServlet {
 			command = new BListCommand();
 			command.execute(request, response);
 			viewPage = "list.jsp";
-			// 여기 밑에 세줄맞나?
 		}
 		else if (com.equals("/list.do"))
 		{
@@ -169,6 +174,7 @@ public class BFrontController extends HttpServlet {
 				return;
 			}
 		}
+		
 		else if (com.contentEquals("/reply_view.do"))
 		{
 			command = new BReplyViewCommand();

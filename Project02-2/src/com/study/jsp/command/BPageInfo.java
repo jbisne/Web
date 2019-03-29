@@ -6,7 +6,6 @@ public class BPageInfo
 	String boardName = "";
 	String boardTitle = "";
 	String boardContent = "";
-	//여기 뭐임?
 	int totalCount;		//총 게시물의 갯수
 	int listCount;		// 한 페이지당 보여줄 게시물의 갯수
 	int totalPage;		// 총 페이지
