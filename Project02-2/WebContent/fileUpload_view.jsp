@@ -5,13 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>JSP/Servlet 22-2</title>
+	
 </head>
 <body>	
 <!-- 텍스트가 올라가는부분,파일이 올라가는부분이 있어서 파트가
 두개로 나눠졋다고해서 멀티파트 enctype. -->
 <!-- 스트림으로 올라가기떄문에 타입 post사용 -->	
 	
-	<table width= "700px" cellpadding="5" cellspacing= "5" border= "5">
+	<table width= "500" cellpadding="1" cellspacing= "1" border= "1">
 		<form action="fileUpload.jsp" method= "post" enctype= "multipart/form-data">
 		
 			<tr>
@@ -26,7 +27,9 @@
 			</tr>
 			<tr>
 				<td> 내용 </td>
-				<td> <textarea name= "fContent" rows= "10"></textarea></td>
+					<td> 
+					<textarea name="bContent" id="ir1" rows="10"></textarea>
+					</td>
 			</tr>
 			<tr>
 				<td> 파일 </td>

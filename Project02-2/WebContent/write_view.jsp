@@ -5,11 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+	<script type="text/javascript" src="./naver-editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+	<script>
+		function form_check()
+		{
+			oEditors.getById["ir1"].exec("UPDATE_CONTENTS_FIELD", []);
+			
+			document.write_form.submit();
+		}
+	</script>
 </head>
 <body>
 	
-	<table width= "500" cellpadding="0" cellspacing= "0" border= "1">	
-		<form action="write.do" method= "post">
+	<table width= "950px" cellpadding="5" cellspacing= "5" border= "5">	
+		<form action="write.do" name="write_form" method= "post">
 			<td> 카테고리 </td>
 			<td>
 			<select name="bCategory">
@@ -33,12 +42,23 @@
 			</tr>
 			<tr>
 				<td> 내용 </td>
-				<td> <textarea name= "bContent" rows= "10"></textarea></td>
+				<td> <textarea name= "bContent" rows= "10" id="ir1" cols="100"></textarea>
+				<script type="text/javascript">
+					var oEditors = [];
+					nhn.husky.EZCreator.createInIFrame
+					({
+					    oAppRef: oEditors,
+					    elPlaceHolder: "ir1",
+					    sSkinURI: "naver-editor/SmartEditor2Skin.html",
+					    fCreator: "createSEditor2"
+					});
+				</script>
+				</td>
 			</tr>
 			
 			<tr>
 				<td colspan= "2">
-					<input type="submit" value="입력"> &nbsp;&nbsp;				
+					<a href= "JavaScript:form_check();">저장</a> &nbsp;&nbsp;				
 					<a href="list.do?bCategory=<%=session.getAttribute("bCategory")%>">목록으로</a>
 				</td>
 			</tr>

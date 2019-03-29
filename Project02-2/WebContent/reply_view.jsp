@@ -18,7 +18,7 @@
 <body>
 	
 	<table width= "500" cellpadding= "0" cellspacing="0" border= "1">
-		<form action= "reply.do" name= "reply_form" method= "post">
+		<form action="reply.do" name="reply_form" method="post">
 			<input type="hidden" name= "bCategory" value= "${reply_view.bCategory}">
 			<input type="hidden" name= "bId" value= "${reply_view.bId}">
 			<input type="hidden" name= "bName" value= "${reply_view.bName}">
@@ -50,12 +50,22 @@
 			<tr>
 				<td> 내용 </td>
 				<td>
-					 <textarea rows="10" name="bContent" >${reply_view.bContent} </textarea>
+					 <textarea rows="10" name="bContent" id="ir1" cols="100" >${reply_view.bContent} </textarea>
+					 <script type="text/javascript">
+						var oEditors = [];
+						nhn.husky.EZCreator.createInIFrame
+						({
+					    oAppRef: oEditors,
+					    elPlaceHolder: "ir1",
+					    sSkinURI: "naver-editor/SmartEditor2Skin.html",
+					    fCreator: "createSEditor2"
+						});
+					</script>
 				</td>
 			</tr>
 			<tr>
 				<td colspan= "2"> 
-				<input type= "submit" value= "답변"> &nbsp;&nbsp;
+				<a href= "JavaScript:form_check();">답변</a> &nbsp;&nbsp;
 				<a href= "content_view.do?bId=${reply_view.bId}&kind=modify">취소</a>&nbsp;&nbsp;
 				<a href= "list.do?page=<%=session.getAttribute("cpage")%>" >목록</a></td>
 			</tr>
