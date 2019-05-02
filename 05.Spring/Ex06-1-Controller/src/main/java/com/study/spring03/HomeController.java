@@ -19,11 +19,10 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
+	public String home(Locale locale, Model model) 
+	{ 
+		// /(루트)로 들어온걸 String home함수를 실행해라.
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();

@@ -24,6 +24,7 @@ public class MyController
 	@RequestMapping("/board/reply")
 	public ModelAndView reply() 
 	{
+		// 객체 자체를 리턴할수도 있다(모델도 세팅하고 뷰도 세팅하고)
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("id", 30);
 		mv.setViewName("board/reply");
