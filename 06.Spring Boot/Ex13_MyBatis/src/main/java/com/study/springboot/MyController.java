@@ -1,3 +1,6 @@
+// MyBatis의 특징
+// 자바코드 대신에 xml 을 이용하여 데이터를 다룰 수 있게 한 것
+
 package com.study.springboot;
 
 import org.springframework.beans.factory.annotation.Autowired;
