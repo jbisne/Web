@@ -1,0 +1,17 @@
+2019-06-04 09:37:18.662  INFO 3840 --- [main] c.s.springboot.TestOracleDbApplication   : Starting TestOracleDbApplication on DESKTOP-U37DVFR with PID 3840 (D:\euiman\euiman\SpringBoot\TestOracleDB\bin\main started by kosmo02-17 in D:\euiman\euiman\SpringBoot\TestOracleDB)
+2019-06-04 09:37:18.668  INFO 3840 --- [main] c.s.springboot.TestOracleDbApplication   : No active profile set, falling back to default profiles: default
+2019-06-04 09:37:20.115  INFO 3840 --- [main] c.s.springboot.TestOracleDbApplication   : Started TestOracleDbApplication in 1.758 seconds (JVM running for 2.433)
+2019-06-04 09:42:50.277  INFO 6996 --- [main] c.s.springboot.TestOracleDbApplication   : Starting TestOracleDbApplication on DESKTOP-U37DVFR with PID 6996 (D:\euiman\euiman\SpringBoot\TestOracleDB\bin\main started by kosmo02-17 in D:\euiman\euiman\SpringBoot\TestOracleDB)
+2019-06-04 09:42:50.280  INFO 6996 --- [main] c.s.springboot.TestOracleDbApplication   : No active profile set, falling back to default profiles: default
+2019-06-04 09:42:51.623  INFO 6996 --- [main] c.s.springboot.TestOracleDbApplication   : Started TestOracleDbApplication in 1.63 seconds (JVM running for 2.333)
+2019-06-04 09:46:50.546  INFO 10564 --- [main] c.s.springboot.TestOracleDbApplication   : Starting TestOracleDbApplication on DESKTOP-U37DVFR with PID 10564 (D:\euiman\euiman\SpringBoot\TestOracleDB\bin\main started by kosmo02-17 in D:\euiman\euiman\SpringBoot\TestOracleDB)
+2019-06-04 09:46:50.548  INFO 10564 --- [main] c.s.springboot.TestOracleDbApplication   : No active profile set, falling back to default profiles: default
+2019-06-04 09:46:51.610  INFO 13012 --- [main] c.s.springboot.TestOracleDbApplication   : Starting TestOracleDbApplication on DESKTOP-U37DVFR with PID 13012 (D:\euiman\euiman\SpringBoot\TestOracleDB\bin\main started by kosmo02-17 in D:\euiman\euiman\SpringBoot\TestOracleDB)
+2019-06-04 09:46:51.613  INFO 13012 --- [main] c.s.springboot.TestOracleDbApplication   : No active profile set, falling back to default profiles: default
+2019-06-04 09:46:52.195  INFO 10564 --- [main] c.s.springboot.TestOracleDbApplication   : Started TestOracleDbApplication in 1.987 seconds (JVM running for 2.664)
+2019-06-04 10:07:40.309  INFO 2892 --- [main] c.s.springboot.TestOracleDbApplication   : Starting TestOracleDbApplication on DESKTOP-U37DVFR with PID 2892 (D:\euiman\euiman\SpringBoot\TestOracleDB\bin\main started by kosmo02-17 in D:\euiman\euiman\SpringBoot\TestOracleDB)
+2019-06-04 10:07:40.311  INFO 2892 --- [main] c.s.springboot.TestOracleDbApplication   : No active profile set, falling back to default profiles: default
+2019-06-04 10:07:41.675  INFO 2892 --- [main] c.s.springboot.TestOracleDbApplication   : Started TestOracleDbApplication in 1.687 seconds (JVM running for 2.487)
+2019-06-04 13:02:50.654  INFO 60136 --- [main] c.s.springboot.TestOracleDbApplication   : Starting TestOracleDbApplication on DESKTOP-IIGFAV1 with PID 60136 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB\TestOracleDB)
+2019-06-04 13:02:50.656  INFO 60136 --- [main] c.s.springboot.TestOracleDbApplication   : No active profile set, falling back to default profiles: default
+2019-06-04 13:02:51.928  INFO 60136 --- [main] c.s.springboot.TestOracleDbApplication   : Started TestOracleDbApplication in 1.554 seconds (JVM running for 1.961)
