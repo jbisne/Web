@@ -1,110 +1,39 @@
-2019-06-04 11:49:54.454  INFO 22292 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 22292 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 11:49:54.456  INFO 22292 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 11:49:55.707  INFO 22292 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.541 seconds (JVM running for 1.955)
-2019-06-04 11:51:10.410  INFO 46196 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 46196 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 11:51:10.414  INFO 46196 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 11:51:11.326  INFO 59912 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 59912 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 11:51:11.328  INFO 59912 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 11:51:12.044  INFO 46196 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.974 seconds (JVM running for 2.598)
-2019-06-04 11:52:01.546  INFO 58520 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 58520 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 11:52:01.548  INFO 58520 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 11:52:02.796  INFO 58520 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.533 seconds (JVM running for 1.934)
-2019-06-04 11:52:53.615  INFO 71424 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 71424 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 11:52:53.617  INFO 71424 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 11:52:54.852  INFO 71424 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.517 seconds (JVM running for 1.919)
-2019-06-04 12:13:00.536  INFO 16976 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 16976 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 12:13:00.538  INFO 16976 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 12:13:01.843  INFO 16976 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.589 seconds (JVM running for 1.998)
-2019-06-04 12:37:47.860  INFO 59096 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 59096 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 12:37:47.862  INFO 59096 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 12:37:49.083  INFO 59096 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.499 seconds (JVM running for 1.895)
-2019-06-04 12:44:41.240  INFO 47956 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 47956 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 12:44:41.242  INFO 47956 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 12:44:42.471  INFO 47956 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.511 seconds (JVM running for 1.909)
-2019-06-04 12:57:47.711  INFO 22096 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 22096 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 12:57:47.713  INFO 22096 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 12:57:48.938  INFO 22096 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.506 seconds (JVM running for 1.898)
-2019-06-04 13:00:31.816  INFO 68692 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 68692 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 13:00:31.818  INFO 68692 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 13:00:33.066  INFO 68692 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.528 seconds (JVM running for 1.931)
-2019-06-04 13:01:30.624  INFO 29396 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 29396 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 13:01:30.626  INFO 29396 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 13:01:31.849  INFO 29396 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.501 seconds (JVM running for 1.891)
-2019-06-04 13:11:47.634  INFO 42916 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 42916 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 13:11:47.636  INFO 42916 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 13:11:48.861  INFO 42916 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.51 seconds (JVM running for 1.918)
-2019-06-04 13:15:27.828  INFO 11840 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 11840 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 13:15:27.830  INFO 11840 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 13:15:29.055  INFO 11840 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.534 seconds (JVM running for 1.984)
-2019-06-04 13:17:34.182  INFO 53456 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 53456 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 13:17:34.184  INFO 53456 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 13:17:35.414  INFO 53456 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.511 seconds (JVM running for 1.902)
-2019-06-04 14:27:44.612  INFO 53076 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 53076 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 14:27:44.614  INFO 53076 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 14:27:45.844  INFO 53076 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.519 seconds (JVM running for 1.92)
-2019-06-04 14:29:55.861  INFO 67440 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 67440 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 14:29:55.863  INFO 67440 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 14:29:57.099  INFO 67440 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.522 seconds (JVM running for 1.92)
-2019-06-04 14:41:15.566  INFO 60896 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 60896 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 14:41:15.568  INFO 60896 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 14:41:16.794  INFO 60896 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.51 seconds (JVM running for 1.909)
-2019-06-04 14:48:28.289  INFO 62820 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 62820 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 14:48:28.293  INFO 62820 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 14:50:19.261  INFO 13508 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 13508 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 14:50:19.263  INFO 13508 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 14:50:20.496  INFO 13508 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.512 seconds (JVM running for 1.915)
-2019-06-04 14:50:53.407  INFO 53972 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 53972 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 14:50:53.409  INFO 53972 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 14:50:54.640  INFO 53972 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.511 seconds (JVM running for 1.905)
-2019-06-04 15:36:39.732  INFO 20448 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 20448 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 15:36:39.734  INFO 20448 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 15:36:40.966  INFO 20448 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.517 seconds (JVM running for 1.935)
-2019-06-04 15:38:10.763  INFO 58052 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 58052 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 15:38:10.766  INFO 58052 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 15:38:13.905  INFO 57476 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 57476 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 15:38:13.907  INFO 57476 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 15:38:15.150  INFO 57476 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.523 seconds (JVM running for 1.922)
-2019-06-04 15:53:40.374  INFO 26392 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 26392 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 15:53:40.376  INFO 26392 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 15:53:41.601  INFO 26392 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.517 seconds (JVM running for 1.989)
-2019-06-04 16:15:05.222  INFO 67956 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 67956 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 16:15:05.224  INFO 67956 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 16:15:06.497  INFO 67956 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.559 seconds (JVM running for 1.969)
-2019-06-04 18:20:29.898  INFO 22968 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 22968 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:20:29.900  INFO 22968 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:20:31.180  INFO 22968 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.573 seconds (JVM running for 2.012)
-2019-06-04 18:25:21.132  INFO 23264 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 23264 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:25:21.134  INFO 23264 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:25:22.367  INFO 23264 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.516 seconds (JVM running for 1.961)
-2019-06-04 18:25:51.351  INFO 54716 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 54716 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:25:51.353  INFO 54716 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:25:52.623  INFO 54716 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.555 seconds (JVM running for 1.992)
-2019-06-04 18:26:21.002  INFO 79452 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 79452 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:26:21.004  INFO 79452 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:26:22.240  INFO 79452 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.515 seconds (JVM running for 1.937)
-2019-06-04 18:47:33.664  INFO 67744 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 67744 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:47:33.666  INFO 67744 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:47:34.921  INFO 67744 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.542 seconds (JVM running for 1.952)
-2019-06-04 18:49:41.101  INFO 24392 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 24392 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:49:41.103  INFO 24392 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:49:42.362  INFO 24392 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.539 seconds (JVM running for 1.952)
-2019-06-04 18:51:36.238  INFO 73248 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 73248 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:51:36.240  INFO 73248 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:51:44.854  INFO 37868 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 37868 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:51:44.856  INFO 37868 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:51:46.117  INFO 37868 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.548 seconds (JVM running for 1.949)
-2019-06-04 18:52:30.337  INFO 32124 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 32124 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:52:30.339  INFO 32124 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:52:31.596  INFO 32124 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.541 seconds (JVM running for 1.944)
-2019-06-04 18:57:20.320  INFO 29228 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 29228 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 18:57:20.322  INFO 29228 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 18:57:21.605  INFO 29228 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.567 seconds (JVM running for 1.975)
-2019-06-04 19:27:07.759  INFO 27284 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 27284 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 19:27:07.761  INFO 27284 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 19:27:09.005  INFO 27284 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.523 seconds (JVM running for 1.952)
-2019-06-04 19:32:55.808  INFO 1580 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 1580 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 19:32:55.810  INFO 1580 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 19:32:57.098  INFO 1580 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.568 seconds (JVM running for 2.014)
-2019-06-04 19:35:09.098  INFO 36484 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 36484 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
-2019-06-04 19:35:09.100  INFO 36484 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
-2019-06-04 19:35:10.380  INFO 36484 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.576 seconds (JVM running for 2.021)
+2019-06-06 14:44:00.002  INFO 16148 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 16148 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 14:44:00.118  INFO 16148 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 14:44:03.928  INFO 16148 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 4.847 seconds (JVM running for 5.791)
+2019-06-06 15:24:09.157  INFO 30592 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 30592 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 15:24:09.159  INFO 30592 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 15:24:10.383  INFO 30592 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.505 seconds (JVM running for 1.934)
+2019-06-06 15:34:14.185  INFO 45760 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 45760 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 15:34:14.187  INFO 45760 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 15:34:15.420  INFO 45760 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.519 seconds (JVM running for 1.918)
+2019-06-06 15:43:49.098  INFO 64996 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 64996 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 15:43:49.100  INFO 64996 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 15:43:50.332  INFO 64996 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.516 seconds (JVM running for 1.912)
+2019-06-06 15:44:53.426  INFO 46128 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 46128 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 15:44:53.427  INFO 46128 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 15:44:54.662  INFO 46128 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.519 seconds (JVM running for 1.922)
+2019-06-06 15:45:52.172  INFO 37144 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 37144 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 15:45:52.174  INFO 37144 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 15:45:53.410  INFO 37144 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.516 seconds (JVM running for 1.919)
+2019-06-06 15:50:14.412  INFO 63840 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 63840 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 15:50:14.414  INFO 63840 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 15:50:15.674  INFO 63840 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.56 seconds (JVM running for 2.03)
+2019-06-06 15:50:32.783  INFO 79456 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 79456 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 15:50:32.785  INFO 79456 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 15:50:34.018  INFO 79456 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.513 seconds (JVM running for 1.915)
+2019-06-06 16:00:31.665  INFO 68256 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 68256 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 16:00:31.667  INFO 68256 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 16:00:32.910  INFO 68256 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.534 seconds (JVM running for 1.956)
+2019-06-06 16:01:29.798  INFO 3672 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 3672 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 16:01:29.799  INFO 3672 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 16:01:31.060  INFO 3672 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.545 seconds (JVM running for 1.946)
+2019-06-06 16:06:19.100  INFO 68640 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 68640 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 16:06:19.102  INFO 68640 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 16:06:20.361  INFO 68640 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.554 seconds (JVM running for 2.004)
+2019-06-06 16:09:31.963  INFO 76964 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 76964 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 16:09:31.965  INFO 76964 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 16:09:33.226  INFO 76964 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.548 seconds (JVM running for 1.962)
+2019-06-06 16:09:46.483  INFO 18788 --- [main] c.s.springboot.TestOracleDb2Application  : Starting TestOracleDb2Application on DESKTOP-IIGFAV1 with PID 18788 (started by kosmo02-19 in D:\web\06.Spring Boot\TestOracleDB2)
+2019-06-06 16:09:46.485  INFO 18788 --- [main] c.s.springboot.TestOracleDb2Application  : No active profile set, falling back to default profiles: default
+2019-06-06 16:09:47.717  INFO 18788 --- [main] c.s.springboot.TestOracleDb2Application  : Started TestOracleDb2Application in 1.51 seconds (JVM running for 1.915)

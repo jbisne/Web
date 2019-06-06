@@ -2,41 +2,42 @@ package com.study.springboot;
 
 public class BlueMarketDto 
 {
-	private String nick;
-	private String phone;
-	private String address;
-	private String email;
-	private String image;
+	private String B_NICK;
+	private String B_PHONE;
+	private String B_ADDRESS;
+	private String B_EMAIL;
+	private String B_IMAGE;
+	
+	public String getB_NICK() {
+		return B_NICK;
+	}
+	public void setB_NICK(String b_NICK) {
+		B_NICK = b_NICK;
+	}
+	public String getB_PHONE() {
+		return B_PHONE;
+	}
+	public void setB_PHONE(String b_PHONE) {
+		B_PHONE = b_PHONE;
+	}
+	public String getB_ADDRESS() {
+		return B_ADDRESS;
+	}
+	public void setB_ADDRESS(String b_ADDRESS) {
+		B_ADDRESS = b_ADDRESS;
+	}
+	public String getB_EMAIL() {
+		return B_EMAIL;
+	}
+	public void setB_EMAIL(String b_EMAIL) {
+		B_EMAIL = b_EMAIL;
+	}
+	public String getB_IMAGE() {
+		return B_IMAGE;
+	}
+	public void setB_IMAGE(String b_IMAGE) {
+		B_IMAGE = b_IMAGE;
+	}
 
-	public String getNick() {
-		return nick;
-	}
-	public void setNick(String nick) {
-		this.nick = nick;
-	}
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getImage() {
-		return image;
-	}
-	public void setImage(String image) {
-		this.image = image;
-	}
 	
 }

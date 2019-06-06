@@ -6,11 +6,20 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class BlueMarketDB {
-	
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+
+
+
+
+public class BlueMarketDB 
+{
+
     private static BlueMarketDB instance = new BlueMarketDB();
 
-    public static BlueMarketDB getInstance() {
+    public static BlueMarketDB getInstance() 
+    {
         return instance;
     }
     
@@ -18,7 +27,7 @@ public class BlueMarketDB {
 
     // oracle 계정
     //String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe";
-    String jdbcUrl = "jdbc:oracle:thin:@192.168.219.131:1521:xe";
+    String jdbcUrl = "jdbc:oracle:thin:@192.168.219.112:1521:xe";
     String userId = "scott";
     String userPw = "tiger";
 
@@ -28,55 +37,49 @@ public class BlueMarketDB {
     ResultSet rs = null;
 
     String sql = "";
-    String sql2 = "";
-    String returns = "";
-
+    JSONObject returns = new JSONObject();
+    JSONArray arr = new JSONArray();
+    
     // 블루마켓DB
-    public String BluemarketDB(String B_NICK, String B_PWD) {
-        try {
+    public String BluemarketDB() 
+    {
+        try 
+        {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             conn = DriverManager.getConnection(jdbcUrl, userId, userPw);
             
-            sql = "SELECT B_NICK FROM TestDB WHERE B_NICK = ?";
+            sql = "SELECT * FROM BLUEMARKETUSER";
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, B_NICK);
-          //  pstmt.setString(2, B_PWD);
-            
-            rs = pstmt.executeQuery();           
-            if(rs.next()) 
+           
+            rs = pstmt.executeQuery();
+            JSONArray arr = new JSONArray();
+            while(rs.next()) 
             {
-            	returns = "이미 존재하는 아이디 입니다.";
-            }
-            else
-            {
-            	sql2="insert into TestDB VALUES(?,?)";
-            	pstmt2 = conn.prepareStatement(sql2);
-            	pstmt2.setString(1, B_NICK);
-            	pstmt2.setString(2, B_PWD);
-            	pstmt2.executeUpdate();          	
-            	returns="succes!";
-            	
-//            	String nick = rs.getString("b_nick");
-//            	String phone = rs.getString("b_phone");
-//            	String address = rs.getString("b_address");
-//            	String email = rs.getString("b_email");
-//            	String image = rs.getString("b_image");
-//            	 returns = nick + "|" + phone+ "|" + address+ "|" + email+ "|" + image;
-            }
+            JSONObject obj = new JSONObject();
+            obj.put("B_NICK",rs.getString("B_NICK"));
+        	obj.put("B_PHONE",rs.getString("B_PHONE"));
+        	obj.put("B_ADDRESS",rs.getString("B_ADDRESS"));
+        	obj.put("B_EMAIL",rs.getString("B_EMAIL"));
+        	obj.put("B_IMAGE",rs.getString("B_IMAGE"));
 
+            arr.add(obj);
+
+            }
+            
+            returns.put("returns", arr);
         } 
         catch (Exception e) 
-        {		
+        {	
         	e.printStackTrace();
         } 
+        
         finally 
         {
-        	if (pstmt2 != null)try {pstmt2.close();} catch (SQLException ex) {}
-            if (pstmt != null)try {pstmt.close();} catch (SQLException ex) {}
-            if (conn != null)try {conn.close();} catch (SQLException ex) {    }
+	     	if (pstmt != null)try {pstmt.close();} catch (SQLException ex) {}
+	        if (conn != null)try {conn.close();} catch (SQLException ex) {}
         }
-       
-        return returns;
+        
+        return returns.toJSONString();
     }
     
 }

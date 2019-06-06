@@ -31,4 +31,6 @@ dependencies {
 	
 	// jdbc spy
 	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }

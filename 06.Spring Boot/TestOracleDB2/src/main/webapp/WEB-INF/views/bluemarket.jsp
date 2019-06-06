@@ -5,11 +5,10 @@
 	
 	BlueMarketDB bluemarketDB = BlueMarketDB.getInstance();
 
-	String nick = request.getParameter("B_NICK");
-	String pwd = request.getParameter("B_PWD");
-	System.out.println(nick);
+	String B_NICK = request.getParameter("B_NICK");
+	System.out.println(B_NICK);
 	
-	String returns = bluemarketDB.BluemarketDB(nick, pwd);
+	String returns = bluemarketDB.BluemarketDB();
 	
     System.out.println(returns);
 
