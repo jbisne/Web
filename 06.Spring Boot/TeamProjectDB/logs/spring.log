@@ -1,0 +1,65 @@
+2019-06-07 10:16:48.201  INFO 33724 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 33724 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 10:16:48.204  INFO 33724 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 10:16:49.443  INFO 33724 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.525 seconds (JVM running for 1.949)
+2019-06-07 11:02:21.632  INFO 3156 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 3156 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:02:21.635  INFO 3156 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:02:22.881  INFO 3156 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.533 seconds (JVM running for 1.945)
+2019-06-07 11:08:28.149  INFO 81608 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 81608 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:08:28.151  INFO 81608 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:08:29.391  INFO 81608 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.513 seconds (JVM running for 1.93)
+2019-06-07 11:09:03.012  INFO 72492 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 72492 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:09:03.015  INFO 72492 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:09:04.388  INFO 72492 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.681 seconds (JVM running for 2.09)
+2019-06-07 11:09:39.116  INFO 27304 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 27304 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:09:39.118  INFO 27304 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:09:40.341  INFO 27304 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.506 seconds (JVM running for 1.904)
+2019-06-07 11:11:01.826  INFO 55276 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 55276 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:11:01.828  INFO 55276 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:11:03.096  INFO 55276 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.552 seconds (JVM running for 1.957)
+2019-06-07 11:11:40.645  INFO 42032 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 42032 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:11:40.647  INFO 42032 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:11:41.884  INFO 42032 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.525 seconds (JVM running for 1.928)
+2019-06-07 11:14:23.793  INFO 40076 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 40076 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:14:23.794  INFO 40076 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:14:25.053  INFO 40076 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.542 seconds (JVM running for 1.945)
+2019-06-07 11:19:07.074  INFO 51248 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 51248 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:19:07.075  INFO 51248 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:19:08.327  INFO 51248 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.534 seconds (JVM running for 1.933)
+2019-06-07 11:19:24.426  INFO 18004 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 18004 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:19:24.427  INFO 18004 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:19:25.660  INFO 18004 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.521 seconds (JVM running for 1.92)
+2019-06-07 11:52:52.080  INFO 6908 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 6908 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:52:52.082  INFO 6908 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:52:53.289  INFO 6908 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.508 seconds (JVM running for 1.93)
+2019-06-07 11:58:44.074  INFO 28796 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 28796 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 11:58:44.076  INFO 28796 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 11:58:45.315  INFO 28796 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.523 seconds (JVM running for 1.922)
+2019-06-07 12:01:57.869  INFO 71748 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 71748 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 12:01:57.871  INFO 71748 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 16:01:08.738  INFO 53812 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 53812 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 16:01:08.739  INFO 53812 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 16:01:09.990  INFO 53812 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.535 seconds (JVM running for 1.956)
+2019-06-07 18:06:54.456  INFO 40896 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 40896 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 18:06:54.458  INFO 40896 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 18:07:30.820  INFO 26712 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 26712 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 18:07:30.822  INFO 26712 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 18:07:53.259  INFO 61324 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 61324 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 18:07:53.261  INFO 61324 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 18:08:21.883  INFO 1956 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 1956 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 18:08:21.885  INFO 1956 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 18:08:23.137  INFO 1956 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.533 seconds (JVM running for 1.932)
+2019-06-07 18:26:15.824  INFO 58160 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 58160 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 18:26:15.826  INFO 58160 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 18:26:28.152  INFO 5892 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 5892 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 18:26:28.154  INFO 5892 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 18:26:29.379  INFO 5892 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.507 seconds (JVM running for 1.932)
+2019-06-07 18:28:52.819  INFO 31788 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 31788 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 18:28:52.821  INFO 31788 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 18:28:54.061  INFO 31788 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.522 seconds (JVM running for 1.916)
+2019-06-07 19:14:27.673 DEBUG 79576 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-06-07 19:14:27.728  INFO 79576 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 79576 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 19:14:27.728  INFO 79576 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 19:14:28.959  INFO 79576 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.509 seconds (JVM running for 1.91)
+2019-06-07 19:39:03.998  INFO 16888 --- [main] c.s.springboot.TeamProjectDbApplication  : Starting TeamProjectDbApplication on DESKTOP-IIGFAV1 with PID 16888 (started by kosmo02-19 in D:\web\06.Spring Boot\TeamProjectDB)
+2019-06-07 19:39:04.000  INFO 16888 --- [main] c.s.springboot.TeamProjectDbApplication  : No active profile set, falling back to default profiles: default
+2019-06-07 19:39:05.245  INFO 16888 --- [main] c.s.springboot.TeamProjectDbApplication  : Started TeamProjectDbApplication in 1.529 seconds (JVM running for 1.927)

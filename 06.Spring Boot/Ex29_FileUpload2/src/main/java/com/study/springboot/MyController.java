@@ -24,6 +24,12 @@ public class MyController
 		return "FileUpload (2)";
 	}
 	
+//	@RequestMapping("/")
+//	public String root() throws Exception
+//	{
+//		return "redirect:fileList";
+//	}
+	
 	@RequestMapping("/uploadForm")
 	public String uploadForm() 
 	{
